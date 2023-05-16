@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "api_doc",
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+  }
+}
+
