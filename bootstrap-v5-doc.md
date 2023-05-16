@@ -2,14 +2,15 @@
 > [bootstrap doc](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
-- [◎ Grid system](#◎-grid-system)
-- [◎ 정열](#◎-정열)
-- [◎ 색](#◎-색)
-- [◎ display](#◎-display)
-- [◎ text](#◎-text)
-- [◎ overflow](#◎-overflow)
-- [◎ position](#◎-position)
-- [◎ sizing](#◎-sizing)
+- [◎ Grid system](#-grid-system)
+- [◎ 정열](#-정열)
+- [◎ 색](#-색)
+- [◎ display](#-display)
+- [◎ text](#-text)
+- [◎ overflow](#-overflow)
+- [◎ position](#-position)
+- [◎ sizing](#-sizing)
+- [◎ Object fit](#-object-fit)
 
 ## CDN
 ``` html
@@ -347,3 +348,39 @@
   <img src="..." class="object-fit-scale border rounded" alt="...">
   <img src="..." class="object-fit-none border rounded" alt="...">
   ```
+
+## ◎ Modal 
+- [api Modal](https://getbootstrap.com/docs/5.3/components/modal/)
+- 모달 크기 : 
+  + 기본 설정없음 : 500px
+  + .modal-sm : 300px
+  + .modal-lg : 800px
+  + .modal-xl : 1140px
+  + .modal-fullscreen : 100%
+    .modal-fullscreen-(sm, md, lg, xl, xxl)-down : 브라우져 < (576px, 768px, 992px, 1200px, 1400)
+- sample
+``` html
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+```
