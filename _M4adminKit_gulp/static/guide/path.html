@@ -1,0 +1,1372 @@
+<!doctype html>
+<!--[if ie 8]> <html class="no-js lt-ie9" lang="ko"> <![endif]-->
+<!--[if gt ie 8]><!-->
+<html class="no-js" lang="ko">
+<!--<![endif]-->
+
+<head>
+    <title>FILE LIST</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js" ></script> -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/vue.js"></script>
+
+    <style>
+        /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block;
+            vertical-align: baseline
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background: transparent
+        }
+
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b,
+        strong {
+            font-weight: bold
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sup {
+            top: -0.5em
+        }
+
+        sub {
+            bottom: -0.25em
+        }
+
+        img {
+            border: 0
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre {
+            overflow: auto
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        legend {
+            border: 0;
+            padding: 0
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        optgroup {
+            font-weight: bold
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        td,
+        th {
+            padding: 0
+        }
+
+        html.ie7,
+        textarea {
+            overflow: auto
+        }
+
+        a,
+        html {
+            color: #767676
+        }
+
+        ._GUIDE__sr-only,
+        caption,
+        legend {
+            width: 1px;
+            height: 1px;
+            position: absolute
+        }
+
+        body,
+        button,
+        dd,
+        div,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        html,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        select,
+        textarea,
+        ul {
+            margin: 0;
+            padding: 0
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            font-size: 100%;
+            line-height: 1.2
+        }
+
+        a {
+            background: 0 0;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        ._GUIDE__foot a,
+        ._GUIDE__tabs .on a {
+            text-decoration: underline;
+            color: #fff
+        }
+
+        a:focus {
+            outline: dotted thin
+        }
+
+        a:active,
+        a:hover {
+            outline: 0
+        }
+
+        li,
+        ol,
+        ul {
+            list-style: none
+        }
+
+        b,
+        strong {
+            font-weight: 700
+        }
+
+        address,
+        em,
+        i,
+        optgroup {
+            font-style: normal;
+            font-weight: 400
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        main,
+        nav,
+        section,
+        summary {
+            display: block;
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            border: 0
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        caption,
+        legend {
+            overflow: hidden;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0 0 0 0)
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            margin: 0
+        }
+
+        button,
+        input {
+            line-height: normal
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        ._GUIDE__cate__subtit,
+        ._GUIDE__cate__tit,
+        ._GUIDE__dt,
+        ._GUIDE__list__head {
+            /*text-transform:capitalize*/
+        }
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            -webkit-appearance: button;
+            background: 0 0;
+            border: 0;
+            cursor: pointer
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type=search] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        textarea {
+            vertical-align: top
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box
+        }
+
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-size: 1em;
+            line-height: 1.4;
+            font-family: Malgun Gothic, '맑은고딕', '돋움', dotum, Helvetica, sans-serif;
+            direction: ltr
+        }
+
+        audio,
+        canvas,
+        img,
+        svg,
+        video {
+            vertical-align: middle
+        }
+
+        ::-moz-selection {
+            background: #b3d4fc !important;
+            text-shadow: none
+        }
+
+        ::selection {
+            background: #b3d4fc !important;
+            text-shadow: none
+        }
+
+        ._GUIDE__sr-only {
+            overflow: hidden;
+            top: -9999px;
+            left: -9999px
+        }
+
+        ._GUIDE {
+            min-width: 320px;
+            font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, "돋움", dotum, "Georgia Pro", Aria, sans-serif
+        }
+
+        ._GUIDE:before {
+            content: "copyright ⓒ 2019 TurfRain(http://turfrain.tistory.com/) All RightsReserved";
+            font-size: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent
+        }
+
+        ._GUIDE__container:after,
+        ._GUIDE__head:after,
+        ._GUIDE__tabs:after {
+            content: "";
+            clear: both
+        }
+
+        ._GUIDE__head {
+            width: 100%;
+            padding: 20px 10px;
+            background: #333;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        ._GUIDE__head:after {
+            display: block
+        }
+
+        ._GUIDE__head .legend {
+            position: absolute;
+            top: 14px;
+            right: 10px;
+        }
+
+        ._GUIDE__head .legend-list {
+            width: auto;
+            text-align: right;
+            font-size: 0;
+        }
+
+        ._GUIDE__head .legend-list li {
+            margin: 2px;
+            padding: 2px;
+            font-size: 11px;
+            display: inline-block;
+            min-width: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        ._GUIDE__head .legend-list li.on {
+            border: 2px solid;
+            padding: 0;
+        }
+
+        ._GUIDE__head .legend-list li span {
+            padding: 1px 3px;
+        }
+
+        ._GUIDE__title {
+            float: left;
+            font-size: 28px;
+            color: #fff
+        }
+
+        ._GUIDE__title a strong {
+            font-weight: bold;
+            color: #fff
+        }
+
+        ._GUIDE__print {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            font-size: 12px
+        }
+
+        ._GUIDE__tabs {
+            float: right
+        }
+
+        ._GUIDE__tabs:after {
+            display: block
+        }
+
+        ._GUIDE__tabs li {
+            float: left;
+            margin-left: 10px
+        }
+
+        ._GUIDE__tabs li:first-child {
+            margin-left: 0
+        }
+
+        ._GUIDE__tabs li a {
+            display: inline-block;
+            padding: 0 10px;
+            color: #ddd;
+            font-size: 14px;
+            line-height: 30px
+        }
+
+        ._GUIDE__tabs .on a {
+            font-weight: 700
+        }
+
+        ._GUIDE__container {
+            position: relative;
+            padding: 10px;
+            margin-top: 74px;
+        }
+
+        ._GUIDE__container:after {
+            display: block
+        }
+
+        ._GUIDE__foot {
+            padding: 12px 0;
+            background: #333;
+            text-align: center;
+            color: #fff;
+            font-size: 12px
+        }
+
+        ._GUIDE__foot address {
+            margin-bottom: 1px
+        }
+
+        @media all and (max-width:768px) {
+            ._GUIDE__head {
+                padding: 10px
+            }
+
+            ._GUIDE__head .legend {
+                position: absolute;
+                top: 3px;
+                right: 15px;
+            }
+
+            ._GUIDE__head .legend-list li {
+                margin: 2px;
+                ;
+                font-size: 11px;
+            }
+
+            ._GUIDE__title {
+                float: none;
+                text-align: left
+            }
+
+            ._GUIDE__tabs {
+                float: none;
+                margin-top: 8px
+            }
+
+            ._GUIDE__tabs li {
+                width: 50%;
+                margin-left: 0;
+                text-align: center
+            }
+
+            ._GUIDE__tabs li:first-child:after {
+                content: "l";
+                float: right;
+                margin-top: 6px;
+                color: #555
+            }
+
+            ._GUIDE__print {
+                display: none
+            }
+
+            ._GUIDE__container {
+                padding: 20px 10px 20px;
+                margin-top: 54px;
+            }
+        }
+
+        ._GUIDE__list {
+            min-height: 900px;
+            font-size: 12px
+        }
+
+        ._GUIDE__list__col {
+            padding: 10px 10px;
+            text-align: left;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        ._GUIDE__list__col--no {
+            width: 50px;
+            background-color: #f4f4f4;
+        }
+
+        ._GUIDE__list__col--1,
+        ._GUIDE__list__col--2,
+        ._GUIDE__list__col--3,
+        ._GUIDE__list__col--4,
+        ._GUIDE__list__col--5 {
+            width: 10%;
+            background-color: #f4f4f4;
+            white-space: initial;
+            text-overflow: initial;
+        }
+
+        ._GUIDE__list__col--url {
+            width: auto;
+        }
+
+        ._GUIDE__list__col--role {
+            width: 70px;
+            text-align: center
+        }
+
+        ._GUIDE__list__col--html,
+        ._GUIDE__list__col--js {
+            width: 50px
+        }
+
+        ._GUIDE__list__col--state {
+            width: 50px
+        }
+
+        ._GUIDE__list__col--state--check {
+            width: 100px;
+            text-align: center
+        }
+
+        ._GUIDE__list__col--update {
+            width: 100px;
+            text-align: center
+        }
+
+        ._GUIDE__list__form:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+
+        ._GUIDE__list__info {
+            line-height: 30px
+        }
+
+        ._GUIDE__list__select {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        ._GUIDE__list__select select {
+            height: 30px;
+            line-height: 28px;
+        }
+
+        ._GUIDE__list__search {
+            float: right;
+            width: 300px;
+            height: 30px;
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            text-align: left
+        }
+
+        ._GUIDE__list__body,
+        ._GUIDE__list__head {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse
+        }
+
+        ._GUIDE__list__head {
+            display: table;
+            margin-top: 10px;
+            background: #f4f4f4;
+        }
+
+        ._GUIDE__list__head ._GUIDE__list__col {
+            display: table-cell;
+            padding: 10px 0;
+            border-top: 2px solid #3f3f3f;
+            border-bottom: 1px solid #3f3f3f;
+            border-right: 1px solid #ccc;
+            text-align: center;
+            color: #333
+        }
+
+        ._GUIDE__list__head ._GUIDE__list__col:first-child {
+            border-left: 1px solid #ccc
+        }
+
+        ._GUIDE__list__body {
+            display: table
+        }
+
+        ._GUIDE__list__item {
+            display: table-row
+        }
+
+        ._GUIDE__list__item.t-divide {
+            border-top: 1px double #3f3f3f;
+        }
+
+        ._GUIDE__list__item.is-different ._GUIDE__list__col--update {
+            background-color: rgba(255, 0, 0, .1)
+        }
+
+        ._GUIDE__list__item.is-done ._GUIDE__list__col--state {
+            background-color: rgba(100, 100, 100, .9);
+            color: #fff
+        }
+
+        ._GUIDE__list__item .state_new,
+        ._GUIDE__list__item.edit .state_new {
+            background-color: #d3e2f9;
+        }
+
+        ._GUIDE__list__item:hover {
+            background: #fcfcfc
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col {
+            display: table-cell;
+            border: 1px solid #ccc
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col--no,
+        ._GUIDE__list__item ._GUIDE__list__col--1,
+        ._GUIDE__list__item ._GUIDE__list__col--2,
+        ._GUIDE__list__item ._GUIDE__list__col--3,
+        ._GUIDE__list__item ._GUIDE__list__col--4,
+        ._GUIDE__list__item ._GUIDE__list__col--5 {
+            background: #f4f4f4;
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col--no,
+        ._GUIDE__list__item ._GUIDE__list__col--state {
+            text-align: center
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col--url {
+            text-align: left;
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col--url a {
+            color: #006fbe;
+        }
+
+        @media screen and (max-width: 768px) {
+            ._GUIDE__list__head {
+                display: none
+            }
+
+            ._GUIDE__list__body {
+                display: block;
+                margin-top: 15px
+            }
+
+            ._GUIDE__list__select {
+                display: none;
+            }
+
+            ._GUIDE__list__search {
+                float: none;
+                width: 100%
+            }
+
+            ._GUIDE__list__item {
+                display: block;
+                border-top: 1px solid #ccc;
+                padding: 10px
+            }
+
+            ._GUIDE__list__item:hover {
+                background: 0 0
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col {
+                display: block;
+                width: 100%;
+                padding: 0;
+                border: none
+            }
+
+            ._GUIDE__list__item:nth-child(odd) {
+                background: #fcfcfc
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--no {
+                display: inline;
+                text-align: left
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--no .sch_state {
+                visibility: hidden;
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--state {
+                text-align: right;
+                background: 0 0;
+                color: #e85349
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--1,
+            ._GUIDE__list__item ._GUIDE__list__col--2,
+            ._GUIDE__list__item ._GUIDE__list__col--3,
+            ._GUIDE__list__item ._GUIDE__list__col--4,
+            ._GUIDE__list__item ._GUIDE__list__col--5 {
+                display: inline;
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--etc {
+                width: 100%;
+                font-size: 10px;
+                text-decoration: underline
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col:before {
+                content: " > "
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--etc:before,
+            ._GUIDE__list__item ._GUIDE__list__col--no:before,
+            ._GUIDE__list__item ._GUIDE__list__col--role:before,
+            ._GUIDE__list__item ._GUIDE__list__col--state:before,
+            ._GUIDE__list__item ._GUIDE__list__col--url:before,
+            ._GUIDE__list__item ._GUIDE__list__col:empty,
+            ._GUIDE__list__item ._GUIDE__list__col:empty:after {
+                display: none
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--url {
+                margin: 10px 0;
+                text-align: left
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--url:before {
+                content: "파일경로 : ";
+                display: inline
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--role {
+                text-align: right
+            }
+
+            ._GUIDE__list__item.is-done ._GUIDE__list__col--state {
+                background: 0 0;
+                color: #006fbe
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--update {
+                display: inline-block;
+                width: auto;
+                text-align: left;
+                font-size: 10px
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--update-pub:before {
+                content: "퍼블:"
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col--update-dev:before {
+                content: "개발:"
+            }
+        }
+
+        ._GUIDE__lnb {
+            position: absolute;
+            left: 20px;
+            width: 260px;
+            border: 1px solid #8c90a1
+        }
+
+        ._GUIDE__lnb li {
+            border-top: 1px solid #8c90a1
+        }
+
+        ._GUIDE__lnb li:first-child {
+            border-top: none
+        }
+
+        ._GUIDE__lnb li a {
+            display: block;
+            height: 35px;
+            padding: 0 10px;
+            line-height: 35px;
+            font-size: 12px;
+            background: #fff
+        }
+
+        ._GUIDE__lnb .on a {
+            position: relative;
+            color: #333;
+            font-weight: 700;
+            background: #fcfcfc
+        }
+
+        ._GUIDE__lnb .on a:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -1px;
+            display: inline-block;
+            width: 6px;
+            height: 100%;
+            background: #e85349
+        }
+
+        ._GUIDE__lnb li a:hover,
+        .l-nav li a:focus {
+            font-weight: 700
+        }
+
+        ._GUIDE__lnb select {
+            display: none
+        }
+
+        ._GUIDE__cate {
+            margin-bottom: 20px
+        }
+
+        ._GUIDE__cate:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+
+        ._GUIDE__cate+._GUIDE__cate {
+            margin-top: 40px
+        }
+
+        ._GUIDE__cate__tit {
+            display: block;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #333;
+            font-weight: 700;
+            font-size: 20px;
+            color: #333
+        }
+
+        ._GUIDE__cate__subtit {
+            display: block;
+            margin-top: 15px;
+            font-size: 15px;
+            color: #555;
+            font-weight: 700
+        }
+
+        ._GUIDE__cate__subtit:before {
+            content: "-";
+            display: inline-block
+        }
+
+        ._GUIDE__cate__subtit em {
+            display: block;
+            margin-top: 5px;
+            margin-left: 10px;
+            color: #e85349;
+            font-size: 12px
+        }
+
+        ._GUIDE__cate__subtit em:before {
+            content: "※";
+            display: inline-block;
+            padding-right: 5px
+        }
+
+        ._GUIDE__dt {
+            display: block;
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        ._GUIDE__dt:before {
+            content: "-";
+            display: inline-block;
+            padding-right: 5px
+        }
+
+        ._GUIDE__dd {
+            margin-top: 5px;
+            font-size: 12px
+        }
+
+        ._GUIDE__code {
+            margin: 10px 0;
+            padding: 15px 10px;
+            border: 1px solid #e0e8ff
+        }
+
+        ._GUIDE__cate__tit+._GUIDE__dd {
+            margin-top: 30px
+        }
+
+        @media screen and (max-width:768px) {
+            ._GUIDE__lnb {
+                position: static;
+                float: none;
+                display: block;
+                width: 100%
+            }
+
+            ._GUIDE__lnb ul {
+                display: none
+            }
+
+            ._GUIDE__lnb select {
+                display: block;
+                width: 100%;
+                height: 30px;
+                border: 1px solid #8c90a1;
+                font-size: 12px
+            }
+
+            ._GUIDE__content {
+                width: 100%;
+                margin: 30px 0 0
+            }
+
+            ._GUIDE__cate+._GUIDE__cate {
+                margin-top: 30px
+            }
+        }
+
+        @media print {
+
+            ._GUIDE__cate,
+            blockquote,
+            img,
+            li,
+            pre,
+            tr {
+                page-break-inside: avoid
+            }
+
+            html {
+                font-size: 13px
+            }
+
+            a,
+            a:visited {
+                color: #333;
+                text-decoration: underline
+            }
+
+            blockquote,
+            pre {
+                border: 1px solid #999
+            }
+
+            img {
+                max-width: 100% !important
+            }
+
+            ._GUIDE__foot,
+            ._GUIDE__head {
+                display: none !important
+            }
+
+            ._GUIDE__container {
+                margin: 0;
+                padding: 0
+            }
+
+            ._GUIDE__content {
+                width: 100%;
+                margin: 0;
+                padding: 2px
+            }
+
+            ._GUIDE__sr-only {
+                position: static;
+                width: auto;
+                height: auto
+            }
+
+            h2._GUIDE__sr-only {
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 700;
+                text-transform: capitalize
+            }
+
+            h2._GUIDE__sr-only:before {
+                content: "▣";
+                display: inline-block
+            }
+
+            ._GUIDE__list__search,
+            ._GUIDE__lnb {
+                display: none
+            }
+
+            ._GUIDE__cate__tit {
+                font-size: 18px
+            }
+
+            ._GUIDE__list {
+                font-size: 5pt
+            }
+
+            ._GUIDE__list__form {
+                margin: 0
+            }
+
+            ._GUIDE__list__head ._GUIDE__list__col {
+                color: #666;
+                border: 1pt solid #ccc !important
+            }
+
+            ._GUIDE__list__item ._GUIDE__list__col {
+                padding: 2px;
+                border: 1pt solid #ccc !important;
+                border-collapse: separate;
+                border-spacing: 0
+            }
+        }
+
+        ._GUIDE__list__item ._GUIDE__list__col--no .sch_state {
+            display: block;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        ._GUIDE__list__item.state_new,
+        ._GUIDE__list__item.state_new span,
+        .legend .state_new {
+            background-color: #fff2e2;
+        }
+
+        ._GUIDE__list__item.state_new a,
+        ._GUIDE__list__item.state_new span,
+        .legend .state_new {
+            color: #ff9000;
+        }
+
+        ._GUIDE__list__item.state_edit,
+        ._GUIDE__list__item.state_edit span,
+        .legend .state_edit {
+            background-color: #d2e7ff;
+        }
+
+        ._GUIDE__list__item.state_edit a,
+        ._GUIDE__list__item.state_edit span,
+        .legend .state_edit {
+            color: #158db0;
+        }
+
+        ._GUIDE__list__item.state_ing,
+        ._GUIDE__list__item.state_ing span,
+        .legend .state_ing {
+            background-color: #f0fffa;
+        }
+
+        ._GUIDE__list__item.state_ing a,
+        ._GUIDE__list__item.state_ing span,
+        .legend .state_ing {
+            color: #1bb37f;
+        }
+
+        ._GUIDE__list__item.state_del,
+        ._GUIDE__list__item.state_del span,
+        .legend .state_del {
+            background-color: #e6e6e6;
+        }
+
+        ._GUIDE__list__item.state_del a,
+        ._GUIDE__list__item.state_del span,
+        .legend .state_del {
+            color: #ff9999;
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="_GUIDE" id="guide_list" style="display:none">
+        <header class="_GUIDE__head">
+            <h1 class="_GUIDE__title"><a href="#"><strong>{{ config.siteName }}</strong></a></h1>
+            <div class="legend">
+                <ul class="legend-list js-legend_list">
+                    <li class="state_new" data-state="state_new"><span>NEW</span></li>
+                    <li class="state_ing" data-state="state_ing"><span>진행</span></li>
+                    <br>
+                    <li class="state_edit" data-state="state_edit"><span>수정</span></li>
+                    <li class="state_del" data-state="state_del"><span>삭제</span></li>
+                </ul>
+            </div>
+        </header>
+        <main class="_GUIDE__container _GUIDE__container--filelist">
+            <h2 class="_GUIDE__sr-only">FILE LIST</h2>
+            <div class="_GUIDE__list">
+                <div class="_GUIDE__list__select">
+                    <select name="" id="select_guid-list"></select>
+                </div>
+                <div class="_GUIDE__list__form">
+                    <span id="list-info" class="_GUIDE__list__info" style="display:none;"></span>
+                    <input type="text" name="" id="list-sch_txt" class="_GUIDE__list__search" title="검색어 입력" placeholder="검색할 단어를 입력하세요." />
+                </div>
+                <div id="list-head" class="_GUIDE__list__head">
+                    <span v-if="t_head.no" class="_GUIDE__list__col _GUIDE__list__col--no">NO</span>
+                    <span v-if="t_head.dep1" class="_GUIDE__list__col _GUIDE__list__col--1">Depth-1</span>
+                    <span v-if="t_head.dep2" class="_GUIDE__list__col _GUIDE__list__col--2">Depth-2</span>
+                    <span v-if="t_head.dep3" class="_GUIDE__list__col _GUIDE__list__col--3">Depth-3</span>
+                    <span v-if="t_head.dep4" class="_GUIDE__list__col _GUIDE__list__col--4">Depth-4</span>
+                    <span v-if="t_head.dep5" class="_GUIDE__list__col _GUIDE__list__col--5">Depth-5</span>
+                    <span v-if="t_head.url" class="_GUIDE__list__col _GUIDE__list__col--url">File path</span>
+                    <span v-if="t_head.role" class="_GUIDE__list__col _GUIDE__list__col--role">담당자</span>
+                    <span v-if="t_head.stateHTML" class="_GUIDE__list__col _GUIDE__list__col--html">HTML</span>
+                    <span v-if="t_head.stateJS" class="_GUIDE__list__col _GUIDE__list__col--js">JS</span>
+                    <span v-if="t_head.state" class="_GUIDE__list__col _GUIDE__list__col--state">완료</span>
+                    <span v-if="t_head.pubUpdate" class="_GUIDE__list__col _GUIDE__list__col--update">퍼블</span>
+                    <span v-if="t_head.devUpdate" class="_GUIDE__list__col _GUIDE__list__col--update">개발</span>
+                    <span v-if="t_head.check" class="_GUIDE__list__col _GUIDE__list__col--state--check">상태</span>
+                    <span v-if="t_head.etc" class="_GUIDE__list__col _GUIDE__list__col--etc">Memo</span>
+                </div>
+                <div id="list-body">
+                    <ul class="_GUIDE__list__body">
+                        <li v-for="(item, index) in t_body" class="_GUIDE__list__item" v-bind:class="li_option(item)">
+                            <span v-if="t_head.no" class="_GUIDE__list__col _GUIDE__list__col--no">{{ index + 1 }}
+                                <em v-if="item.stateLine" class="sch_state">{{ "state_"+ item.stateLine}}</em>
+                                <em v-else="item.stateLine" class="sch_state"></em>
+                            </span>
+                            <span v-if="t_head.dep1" v-bind:title="item.dep1" class="_GUIDE__list__col _GUIDE__list__col--1">{{item.dep1}}</span>
+                            <span v-if="t_head.dep2" v-bind:title="item.dep2" class="_GUIDE__list__col _GUIDE__list__col--2">{{item.dep2}}</span>
+                            <span v-if="t_head.dep3" v-bind:title="item.dep3" class="_GUIDE__list__col _GUIDE__list__col--3">{{item.dep3}}</span>
+                            <span v-if="t_head.dep4" v-bind:title="item.dep4" class="_GUIDE__list__col _GUIDE__list__col--4">{{item.dep4}}</span>
+                            <span v-if="t_head.dep5" v-bind:title="item.dep5" class="_GUIDE__list__col _GUIDE__list__col--5">{{item.dep5}}</span>
+                            <span v-if="t_head.url" v-bind:title="item.url" class="_GUIDE__list__col _GUIDE__list__col--url">
+                                <a href="#" v-bind:href="item.url" target="_self">{{item.url}}</a>
+                            </span>
+                            <span v-if="t_head.role" class="_GUIDE__list__col _GUIDE__list__col--role">{{item.role}}</span>
+                            <span v-if="t_head.stateHTML" class="_GUIDE__list__col _GUIDE__list__col--html">{{item.stateHTML ? '완료' : '작업중' }}</span>
+                            <span v-if="t_head.stateJS" class="_GUIDE__list__col _GUIDE__list__col--js">{{item.stateJS ? '완료' : '작업중' }}</span>
+                            <span v-if="t_head.state" class="_GUIDE__list__col _GUIDE__list__col--state">{{item.state ? '완료' : '작업중' }}</span>
+                            <span v-if="t_head.pubUpdate" class="_GUIDE__list__col _GUIDE__list__col--update _GUIDE__list__col--update-pub">{{item.pubUpdate}}</span>
+                            <span v-if="t_head.devUpdate" class="_GUIDE__list__col _GUIDE__list__col--update _GUIDE__list__col--update-dev">{{item.devUpdate}}</span>
+                            <span v-if="t_head.check" class="_GUIDE__list__col _GUIDE__list__col--state--check">
+                                <select name="" id="">
+                                    <option value="0">option0</option>
+                                    <option value="1">option1</option>
+                                    <option value="2">option2</option>
+                                    <option value="3">option3</option>
+                                </select>
+                            </span>
+                            <span v-if="t_head.etc" v-bind:title="item.etc" class="_GUIDE__list__col _GUIDE__list__col--etc">{{item.etc}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="_GUIDE__foot _GUIDE__sr-only">
+            <p>copyright ⓒ 2018 <a href="mailTo:turfrain@yahoo.co.kr">turfrain@yahoo.co.kr</a> All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        var guideList;
+        $.ajax({
+            url: '../dev_inc/js/@debug_v1.0.js',
+            //url:'./@guide_filelist.js',
+            type: 'HEAD',
+            error: function() {
+                console.log("=== Publishing ===");
+                $("._GUIDE__list__select").hide();
+            },
+            success: function() {
+                console.log("=== Debug Mode ===");
+                var tag = document.createElement('script');
+                tag.src = "./@guide_filelist.js";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            }
+        });
+    </script>
+    <script src="path_list.js"></script>
+
+</body>
+
+</html>
