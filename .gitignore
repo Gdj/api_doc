@@ -1,0 +1,6 @@
+*.bak
+.git/
+.svn/
+node_modules/
+
+**/webpack5_Publishing/dist/

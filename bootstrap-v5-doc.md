@@ -1,15 +1,18 @@
 # bootstrap-v5-doc
 
-- [◎ Grid system](#-grid-system)
-- [◎ 정열](#-정열)
-- [◎ 색](#-색)
-- [◎ display](#-display)
-- [◎ text](#-text)
-- [◎ overflow](#-overflow)
-- [◎ position](#-position)
-- [◎ sizing](#-sizing)
-- [◎ Object fit](#-object-fit)
-- [◎ plugin & api](#-plugin-api)
+- [◎ Grid system ](#◎-grid-system)
+- [◎ passion](#◎-passion)
+- [◎ color](#◎-color)
+- [◎ display](#◎-display)
+- [◎ text](#◎-text)
+- [◎ overflow](#◎-overflow)
+- [◎ position](#◎-position)
+- [◎ sizing](#◎-sizing)
+- [◎ spacing](#◎-spacing)
+- [◎ object fit](#◎-object-fit)
+- [◎ script UI](#◎-script-ui)
+  + [Modal](#modal)
+- [◎ plugin API link](#◎-plugin-api-link)
 
 ## CDN
 ``` html
@@ -20,7 +23,7 @@
 
 ## ◎ Grid system
   ### container
-  - [AIP container](https://getbootstrap.com/docs/5.3/layout/containers/)
+  - [API container](https://getbootstrap.com/docs/5.3/layout/containers/)
   - 기본크기 : `.container`
   - 크기변형 : `.container-(sm, md, lg, xl, xxl)`
    <table>
@@ -58,7 +61,7 @@
     </table>
 
   ### .row
-  - [AIP grid](https://getbootstrap.com/docs/5.3/layout/grid/)
+  - [API grid](https://getbootstrap.com/docs/5.3/layout/grid/)
   - 사용:
     ``` html  
     <div class="row"> 
@@ -103,7 +106,7 @@
 
   
   ### .grid
-  - [AIP css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
+  - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
   - 사용:
   ``` html
     <div class="grid text-center">
@@ -115,45 +118,9 @@
   - 컬럼 시작 :  `g-start-(1~12)`, `grid-column-start`
   - 컬럼 종료 :  `g-end-(1~12)`, `grid-column-end`
 
-  ### 여백
-   - X : 1~5
-  <table>
-    <thead>
-      <tr> 
-        <th> 종류 </th>
-        <th> 위 </th>
-        <th> 아래 </th>
-        <th> 왼쪽 </th>
-        <th> 오른쪽 </th>
-        <th> 상하 </th>
-        <th> 좌우 </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>margin</th>
-        <td>.mt-X</td>
-        <td>.mb-X-</td>
-        <td>.ms-X-</td>
-        <td>.me-X-</td>
-        <td>.my-X-</td>
-        <td>.mx-X-</td>
-      </tr>
-      <tr>
-        <th>padding</th>
-        <td>.pt-X</td>
-        <td>.pb-X</td>
-        <td>.ps-X</td>
-        <td>.pe-X</td>
-        <td>.py-X</td>
-        <td>.px-X</td>
-      </tr>
-    </tbody>
-  </table>
-
-## ◎ 정열
+## ◎ passion
   ### flex
-  - [api flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
+  - [API flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
   #### - justify content
   ``` html
   <div class="d-flex justify-content-start">...</div>
@@ -173,7 +140,7 @@
   ```
 
   ### float
-  - [api float](https://getbootstrap.com/docs/5.3/utilities/float/)
+  - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
   - ( .float-start, .float-end ) .clearfix 
 
   ### vertical 
@@ -193,10 +160,10 @@
     <p class="text-end">End aligned text on all viewport sizes.</p>
   ```
 
-## ◎ 색
+## ◎ color
   ### typo & backgound
-  - text- : [api colors](https://getbootstrap.com/docs/5.3/utilities/colors/) 
-  - bg-   : [api background](https://getbootstrap.com/docs/5.3/utilities/background/)
+  - text- : [API colors](https://getbootstrap.com/docs/5.3/utilities/colors/) 
+  - bg-   : [API background](https://getbootstrap.com/docs/5.3/utilities/background/)
   <table>
     <tr>
       <td><span style="background-color:#0D7efd">.bg-primary</span></td>
@@ -242,7 +209,7 @@
             `opacity-100 opacity-75 opacity-50 opacity-25`
   
   ### borders
-  - [api borders](https://getbootstrap.com/docs/5.3/utilities/borders/)
+  - [API borders](https://getbootstrap.com/docs/5.3/utilities/borders/)
   ``` html 
     <span class="border border-primary"></span>
     <span class="border border-primary-subtle"></span>
@@ -267,13 +234,13 @@
 
 
 ## ◎ display
-  - [api display](https://getbootstrap.com/docs/5.3/utilities/display/)
+  - [API display](https://getbootstrap.com/docs/5.3/utilities/display/)
   - 기본 사용 : `d-inline-block, d-inline, d-block, d-non`
   - 반응형 사용 : `d-(sm, md, lg, xl, xxl)-block` 
 
 
 ## ◎ text 
-  - [api text](https://getbootstrap.com/docs/5.3/utilities/text/)
+  - [API text](https://getbootstrap.com/docs/5.3/utilities/text/)
   ### 폰트 크기
   - (.fs-1 ~ .fs-6)
   
@@ -299,7 +266,7 @@
   - 강제 줄바꿈 : `.text-break`
 
 ## ◎ overflow
-  - [api Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
+  - [API Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
   - overflow-y 
     ``` html
     <div class="overflow-auto">...</div>
@@ -316,7 +283,7 @@
     ```
 
 ## ◎ position
-  - [api position](https://getbootstrap.com/docs/5.3/utilities/position/)
+  - [API position](https://getbootstrap.com/docs/5.3/utilities/position/)
   - 속성 
     ``` html
     <div class="position-static">...</div>
@@ -331,15 +298,52 @@
     (.translate-middle, .translate-middle-x, .translate-middle-y)
 
 ## ◎ sizing
-  - [api sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
+  - [API sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
   - width : (w-25, w-50, w-75, w-100, w-auto) (25%, 50%, 75%, 100%)
   - height : (h-25, h-50, h-75, h-100, h-auto) (25%, 50%, 75%, 100%)
   - other :  
     max-width: (mw-100), max-width: (mh-100), width 100vw: (vw-100), height 100vh: (vh-100)
 
+## ◎ spacing
+  - [API sizing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+  - X : 1~5
+  <table>
+    <thead>
+      <tr> 
+        <th> 종류 </th>
+        <th> 위 </th>
+        <th> 아래 </th>
+        <th> 왼쪽 </th>
+        <th> 오른쪽 </th>
+        <th> 상하 </th>
+        <th> 좌우 </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>margin</th>
+        <td>.mt-X</td>
+        <td>.mb-X-</td>
+        <td>.ms-X-</td>
+        <td>.me-X-</td>
+        <td>.my-X-</td>
+        <td>.mx-X-</td>
+      </tr>
+      <tr>
+        <th>padding</th>
+        <td>.pt-X</td>
+        <td>.pb-X</td>
+        <td>.ps-X</td>
+        <td>.pe-X</td>
+        <td>.py-X</td>
+        <td>.px-X</td>
+      </tr>
+    </tbody>
+  </table>
+
     
-## ◎ Object fit
-  - [api Object fit](https://getbootstrap.com/docs/5.3/utilities/object-fit/)
+## ◎ object fit
+  - [API Object fit](https://getbootstrap.com/docs/5.3/utilities/object-fit/)
   ``` html
   <img src="..." class="object-fit-contain border rounded" alt="...">
   <img src="..." class="object-fit-cover border rounded" alt="...">
@@ -348,8 +352,9 @@
   <img src="..." class="object-fit-none border rounded" alt="...">
   ```
 
-## ◎ Modal 
-- [api Modal](https://getbootstrap.com/docs/5.3/components/modal/)
+## ◎ script UI
+### Modal 
+- [API Modal](https://getbootstrap.com/docs/5.3/components/modal/)
 - 모달 크기 : 
   + 기본 설정없음 : 500px
   + .modal-sm : 300px
@@ -385,7 +390,7 @@
 ```
 
 
-## ◎ plugin & api
+## ◎ plugin API link
 - [bootstrap5 doc](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 doc(kr)](https://getbootstrap.kr/)
 - [부트스트랩 테마(무료&유료)](https://startbootstrap.com/)
