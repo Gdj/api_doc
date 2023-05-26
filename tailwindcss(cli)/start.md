@@ -3,6 +3,7 @@
 
 
 ## tailwindcss CLI 설치 
+  > https://tailwindcss.com/docs/installation
   - packckage.json 생성 : `npm init -y`
   - tailwindcss 설치 : `npm install -D tailwindcss`
   - tailwind.config.js 생성 : `npx tailwindcss init`
@@ -39,3 +40,4 @@
       </body>
       </html>
     ```
+  - 실행 : `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
