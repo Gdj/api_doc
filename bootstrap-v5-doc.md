@@ -1,18 +1,18 @@
 # bootstrap-v5-doc
 
-- [◎ Grid system ](#◎-grid-system)
-- [◎ passion](#◎-passion)
-- [◎ color](#◎-color)
-- [◎ display](#◎-display)
-- [◎ text](#◎-text)
-- [◎ overflow](#◎-overflow)
-- [◎ position](#◎-position)
-- [◎ sizing](#◎-sizing)
-- [◎ spacing](#◎-spacing)
-- [◎ object fit](#◎-object-fit)
-- [◎ script UI](#◎-script-ui)
+- [Grid system ](#grid-system)
+- [passion](#passion)
+- [color](#color)
+- [display](#display)
+- [text](#text)
+- [overflow](#overflow)
+- [position](#position)
+- [sizing](#sizing)
+- [spacing](#spacing)
+- [object fit](#object-fit)
+- [script UI](#script-ui)
   + [Modal](#modal)
-- [◎ plugin API link](#◎-plugin-api-link)
+- [ plugin API link](#plugin-api-link)
 
 ## CDN
 ``` html
@@ -21,7 +21,7 @@
 ```
 
 
-## ◎ Grid system
+## Grid system
   ### container
   - [API container](https://getbootstrap.com/docs/5.3/layout/containers/)
   - 기본크기 : `.container`
@@ -118,7 +118,7 @@
   - 컬럼 시작 :  `g-start-(1~12)`, `grid-column-start`
   - 컬럼 종료 :  `g-end-(1~12)`, `grid-column-end`
 
-## ◎ passion
+## passion
   ### flex
   - [API flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
   #### - justify content
@@ -160,7 +160,7 @@
     <p class="text-end">End aligned text on all viewport sizes.</p>
   ```
 
-## ◎ color
+## color
   ### typo & backgound
   - text- : [API colors](https://getbootstrap.com/docs/5.3/utilities/colors/) 
   - bg-   : [API background](https://getbootstrap.com/docs/5.3/utilities/background/)
@@ -233,13 +233,13 @@
 
 
 
-## ◎ display
+## display
   - [API display](https://getbootstrap.com/docs/5.3/utilities/display/)
   - 기본 사용 : `d-inline-block, d-inline, d-block, d-non`
   - 반응형 사용 : `d-(sm, md, lg, xl, xxl)-block` 
 
 
-## ◎ text 
+## text 
   - [API text](https://getbootstrap.com/docs/5.3/utilities/text/)
   ### 폰트 크기
   - (.fs-1 ~ .fs-6)
@@ -265,7 +265,7 @@
   - 줄바꿈 안함 : `.text-nowrap`
   - 강제 줄바꿈 : `.text-break`
 
-## ◎ overflow
+## overflow
   - [API Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
   - overflow-y 
     ``` html
@@ -282,7 +282,7 @@
     <div class="overflow-x-scroll">...</div>
     ```
 
-## ◎ position
+## position
   - [API position](https://getbootstrap.com/docs/5.3/utilities/position/)
   - 속성 
     ``` html
@@ -297,14 +297,14 @@
   - 위치 중심
     (.translate-middle, .translate-middle-x, .translate-middle-y)
 
-## ◎ sizing
+## sizing
   - [API sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
   - width : (w-25, w-50, w-75, w-100, w-auto) (25%, 50%, 75%, 100%)
   - height : (h-25, h-50, h-75, h-100, h-auto) (25%, 50%, 75%, 100%)
   - other :  
     max-width: (mw-100), max-width: (mh-100), width 100vw: (vw-100), height 100vh: (vh-100)
 
-## ◎ spacing
+## spacing
   - [API sizing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
   - X : 1~5
   <table>
@@ -342,7 +342,7 @@
   </table>
 
     
-## ◎ object fit
+## object fit
   - [API Object fit](https://getbootstrap.com/docs/5.3/utilities/object-fit/)
   ``` html
   <img src="..." class="object-fit-contain border rounded" alt="...">
@@ -352,7 +352,7 @@
   <img src="..." class="object-fit-none border rounded" alt="...">
   ```
 
-## ◎ script UI
+## script UI
 ### Modal 
 - [API Modal](https://getbootstrap.com/docs/5.3/components/modal/)
 - 모달 크기 : 
@@ -390,7 +390,7 @@
 ```
 
 
-## ◎ plugin API link
+## plugin API link
 - [bootstrap5 doc](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [bootstrap5 doc(kr)](https://getbootstrap.kr/)
 - [부트스트랩 테마(무료&유료)](https://startbootstrap.com/)
