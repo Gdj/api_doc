@@ -139,6 +139,17 @@
   <div class="d-flex align-items-stretch">...</div>
   ```
 
+  #### fill (item)
+    - `flex-fill` : 수평 요소를 컨테이너 크기만큼 채움
+    - `flex-grow-1`   : 최대크기 ↑ 커짐  
+    - `flex-shrink-1` : 최소크기 ↑ 작아짐  
+    - Auto margins : 
+      + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀지
+      + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
+      + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
+      + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
+      + `over-1 ~ 5` : 아이템 순서
+
   ### float
   - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
   - ( .float-start, .float-end ) .clearfix 
@@ -159,6 +170,8 @@
     <p class="text-center">Center aligned text on all viewport sizes.</p>
     <p class="text-end">End aligned text on all viewport sizes.</p>
   ```
+
+
 
 ## color
   ### typo & backgound
@@ -247,7 +260,7 @@
   ### 줄간격
   - (lh-1, lh-sm, lh-base, lh-lg)
   
-  ### 폰트 weight & italics
+  ### 텍스트 weight & italics
   ``` html  
   <p class="fw-bold">Bold text.</p>
   <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
@@ -259,6 +272,11 @@
   <p class="fst-italic">Italic text.</p>
   <p class="fst-normal">Text with normal font style</p>
   ```
+  ### Text decoration
+  - `text-decoration-underline`    : 언더라인
+  - `text-decoration-line-through` : 쉬소선
+  - `text-decoration-line-none`    : 데코 레이션 삭제
+
 
   ### 텍스트 넘침
   - 단어 줄바꿈 : `.text-wrap`
