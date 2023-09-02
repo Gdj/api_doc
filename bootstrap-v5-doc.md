@@ -149,6 +149,16 @@
       + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
       + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
       + `over-1 ~ 5` : 아이템 순서
+  #### Align self  (item)
+    - `align-self-start` : 상단
+    - `align-self-end`   : 하단
+    - `align-self-center`: 중앙
+    - `align-self-center`: 중앙
+    - `align-self-baseline`: 기준선
+    - `align-self-stretch`:  영역 채우기
+    
+
+
 
   ### float
   - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
