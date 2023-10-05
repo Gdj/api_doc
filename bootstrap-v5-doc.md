@@ -69,7 +69,38 @@
       <div class="col">
     </div> 
     ```
-  - 크기 auto : `col`
+  - 간격 
+  > `.row` <= 적용  
+  > `.col` <= 반영
+    <table>
+      <thead>
+        <tr> 
+          <th>class</th><th>descriptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>g-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             margin-top:$var; padding-left: calc($var * .5); padding-right: calc($var * .5); 
+          </td>
+        </tr>
+        <tr>
+          <td>gy-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             margin-top:$var; 
+          </td>
+        </tr>
+        <tr>
+          <td>gx-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            padding-left: calc($var * .5); padding-right: calc($var * .5); 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  - 반응형 크기 auto : `col`
     <table>
       <thead>
         <tr> 
@@ -84,7 +115,7 @@
       </thead>
       <tbody>
         <tr>
-          <th>컬럼크기</th>
+          <th>컬럼 반응형 크기</th>
           <td>.col-</td>
           <td>.col-sm-</td>
           <td>.col-md-</td>
@@ -104,7 +135,40 @@
       </tbody>
     </table>
 
-  
+  - 강제 위치
+    + `.order-last`  : 컬럼 위치 강제로 뒤로 보내기
+    + `.order-first` : 컬럼 위치 강제로 앞으로 보내기
+
+  - Horizontal 정렬  
+  > `.row` <= 적용    
+  > `.col` <= 반영 
+    | class                    | descriptions         |
+    | ------------------------ | -------------------- |
+    | justify-content-start    | 왼쪽으로 정렬         |
+    | justify-content-center   | 중앙으로 정렬         |
+    | justify-content-end      | 오른쪽으로 정렬       |
+    | justify-content-around   | 좌우 고정비율 간격    |
+    | justify-content-between  | 양끝 정렬             |
+    | justify-content-evenly   | 양끝 `.col` 동일 비율 |
+
+
+  - Vertical 정렬  
+  > `.row` <= 적용    
+  > `.col` <= 반영  
+
+    | class                | descriptions        |
+    | -------------------- | ------------------- |
+    | align-items-start    | 상단으로 정렬        |
+    | align-items-center   | 중앙으로 정렬        |
+    | align-items-end      | 하단으로 정렬        |
+
+  > `.col` <= 적용, 반영  
+    | class                | descriptions        |
+    | -------------------- | ------------------- |
+    | align-self-start    | 상단으로 정렬        |
+    | align-self-center   | 중앙으로 정렬        |
+    | align-self-end      | 하단으로 정렬        |
+
   ### .grid
   - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
   - 사용:
@@ -115,6 +179,38 @@
       <div>1</div>
     </div>
   ```
+  - 간격 
+  > `.grid`  <= 적용  
+  > `.g-col` <= 반영
+    <table>
+      <thead>
+        <tr> 
+          <th>class</th><th>descriptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            gap: $var; (X, Y)
+          </td>
+        </tr>
+        <tr>
+          <td>row-gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            row-gap: $var; (Y)
+          </td>
+        </tr>
+        <tr>
+          <td>column-gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             column-gap: $var; (X) 
+          </td>
+        </tr>
+      
+      </tbody>
+    </table>
+
   - 컬럼 시작 :  `g-start-(1~12)`, `grid-column-start`
   - 컬럼 종료 :  `g-end-(1~12)`, `grid-column-end`
 
