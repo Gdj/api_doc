@@ -142,6 +142,7 @@
   - Horizontal 정렬  
   > `.row` <= 적용    
   > `.col` <= 반영 
+
     | class                    | descriptions         |
     | ------------------------ | -------------------- |
     | justify-content-start    | 왼쪽으로 정렬         |
@@ -150,7 +151,6 @@
     | justify-content-around   | 좌우 고정비율 간격    |
     | justify-content-between  | 양끝 정렬             |
     | justify-content-evenly   | 양끝 `.col` 동일 비율 |
-
 
   - Vertical 정렬  
   > `.row` <= 적용    
@@ -161,13 +161,14 @@
     | align-items-start    | 상단으로 정렬        |
     | align-items-center   | 중앙으로 정렬        |
     | align-items-end      | 하단으로 정렬        |
+       
+    > `.col` <= 적용, 반영
 
-  > `.col` <= 적용, 반영  
     | class                | descriptions        |
     | -------------------- | ------------------- |
-    | align-self-start    | 상단으로 정렬        |
-    | align-self-center   | 중앙으로 정렬        |
-    | align-self-end      | 하단으로 정렬        |
+    | align-self-start     | 상단으로 정렬        |
+    | align-self-center    | 중앙으로 정렬        |
+    | align-self-end       | 하단으로 정렬        |
 
   ### .grid
   - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
