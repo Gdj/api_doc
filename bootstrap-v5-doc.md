@@ -72,6 +72,7 @@
   - 간격 
   > `.row` <= 적용  
   > `.col` <= 반영
+
     <table>
       <thead>
         <tr> 
@@ -143,32 +144,32 @@
   > `.row` <= 적용    
   > `.col` <= 반영 
 
-    | class                    | descriptions         |
-    | ------------------------ | -------------------- |
-    | justify-content-start    | 왼쪽으로 정렬         |
-    | justify-content-center   | 중앙으로 정렬         |
-    | justify-content-end      | 오른쪽으로 정렬       |
-    | justify-content-around   | 좌우 고정비율 간격    |
-    | justify-content-between  | 양끝 정렬             |
-    | justify-content-evenly   | 양끝 `.col` 동일 비율 |
+  | class                    | descriptions         |
+  | ------------------------ | -------------------- |
+  | justify-content-start    | 왼쪽으로 정렬         |
+  | justify-content-center   | 중앙으로 정렬         |
+  | justify-content-end      | 오른쪽으로 정렬       |
+  | justify-content-around   | 좌우 고정비율 간격    |
+  | justify-content-between  | 양끝 정렬             |
+  | justify-content-evenly   | 양끝 `.col` 동일 비율 |
 
   - Vertical 정렬  
   > `.row` <= 적용    
   > `.col` <= 반영  
 
-    | class                | descriptions        |
-    | -------------------- | ------------------- |
-    | align-items-start    | 상단으로 정렬        |
-    | align-items-center   | 중앙으로 정렬        |
-    | align-items-end      | 하단으로 정렬        |
-       
-    > `.col` <= 적용, 반영
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-items-start    | 상단으로 정렬        |
+  | align-items-center   | 중앙으로 정렬        |
+  | align-items-end      | 하단으로 정렬        |
+      
+  > `.col` <= 적용, 반영
 
-    | class                | descriptions        |
-    | -------------------- | ------------------- |
-    | align-self-start     | 상단으로 정렬        |
-    | align-self-center    | 중앙으로 정렬        |
-    | align-self-end       | 하단으로 정렬        |
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-self-start     | 상단으로 정렬        |
+  | align-self-center    | 중앙으로 정렬        |
+  | align-self-end       | 하단으로 정렬        |
 
   ### .grid
   - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
@@ -183,6 +184,7 @@
   - 간격 
   > `.grid`  <= 적용  
   > `.g-col` <= 반영
+
     <table>
       <thead>
         <tr> 
@@ -362,9 +364,11 @@
 ## text 
   - [API text](https://getbootstrap.com/docs/5.3/utilities/text/)
   ### 폰트 크기
+  font-size
   - (.fs-1 ~ .fs-6)
   
   ### 줄간격
+  line-height
   - (lh-1, lh-sm, lh-base, lh-lg)
   
   ### 텍스트 weight & italics
