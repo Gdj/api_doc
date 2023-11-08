@@ -261,7 +261,7 @@
 
   ### float
   - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
-  - ( .float-start, .float-end ) .clearfix 
+  - .clearfix > ( .float-start, .float-end ) : clearfix 하위 클래스
 
   ### vertical 
   ``` html  
