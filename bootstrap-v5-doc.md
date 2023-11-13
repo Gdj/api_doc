@@ -235,23 +235,23 @@
   <div class="d-flex align-items-stretch">...</div>
   ```
 
-  #### fill (item)
-    - `flex-fill` : 수평 요소를 컨테이너 크기만큼 채움
-    - `flex-grow-1`   : 최대크기 ↑ 커짐  
-    - `flex-shrink-1` : 최소크기 ↑ 작아짐  
-    - Auto margins : 
-      + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀기
-      + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
-      + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
-      + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
-      + `over-1 ~ 5` : 아이템 순서
-  #### Align self  (item)
-    - `align-self-start` : 상단
-    - `align-self-end`   : 하단
-    - `align-self-center`: 중앙
-    - `align-self-baseline`: 기준선
-    - `align-self-stretch`:  영역 채우기
-    
+  #### fill (item)   
+  - `flex-fill` : 수평 요소를 컨테이너 크기만큼 채움
+  - `flex-grow-1`   : 최대크기 ↑ 커짐  
+  - `flex-shrink-1` : 최소크기 ↑ 작아짐  
+  - Auto margins : 
+    + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀기
+    + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
+    + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
+    + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
+    + `over-1 ~ 5` : 아이템 순서
+  #### Align self (item)   
+  - `align-self-start` : 상단
+  - `align-self-end`   : 하단
+  - `align-self-center`: 중앙
+  - `align-self-baseline`: 기준선
+  - `align-self-stretch`:  영역 채우기
+  
 
 
 
@@ -363,8 +363,7 @@
   font-size
   - (.fs-1 ~ .fs-6)
   
-  ### 줄간격
-  line-height
+  ### 줄간격 (`line-height`)
   - (lh-1, lh-sm, lh-base, lh-lg)
   
   ### 텍스트 weight & italics
