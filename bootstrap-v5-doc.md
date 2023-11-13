@@ -70,9 +70,8 @@
     </div> 
     ```
   - 간격 
-  > `.row` <= 적용  
-  > `.col` <= 반영
-  
+   + `.row` <= 적용  
+   + `.col` <= 반영
     <table>
       <thead>
         <tr> 
@@ -142,9 +141,8 @@
     + `.order-first` : 컬럼 위치 강제로 앞으로 보내기
 
   - Horizontal 정렬  
-  > `.row` <= 적용    
-  > `.col` <= 반영 
-
+    + `.row` <= 적용  
+    + `.col` <= 반영
   | class                    | descriptions         |
   | ------------------------ | -------------------- |
   | justify-content-start    | 왼쪽으로 정렬         |
@@ -155,9 +153,8 @@
   | justify-content-evenly   | 양끝 `.col` 동일 비율 |
 
   - Vertical 정렬  
-  > `.row` <= 적용    
-  > `.col` <= 반영  
-
+    + `.row` <= 적용  
+    + `.col` <= 반영
   | class                | descriptions        |
   | -------------------- | ------------------- |
   | align-items-start    | 상단으로 정렬        |
@@ -183,8 +180,8 @@
     </div>
   ```
   - 간격 
-  > `.grid`  <= 적용  
-  > `.g-col` <= 반영
+    + `.row` <= 적용  
+    + `.col` <= 반영
     <table>
       <thead>
         <tr> 
