@@ -72,6 +72,7 @@
   - 간격 
   > `.row` <= 적용  
   > `.col` <= 반영
+  
     <table>
       <thead>
         <tr> 
