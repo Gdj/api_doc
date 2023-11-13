@@ -55,7 +55,7 @@
     </tbody>
   </table>
 
-### d-flex
+### flex 속성 다루기
 > d-flex 와 같이 선언
 - 좌우 배치 
   | class                    | descriptions         |
@@ -74,13 +74,34 @@
   | align-items-center   | 중앙으로 정렬        |
   | align-items-end      | 하단으로 정렬        |
 
-> d-flex 자식 요소에 적용
+> flex 자식 요소에 직접 적용
 - 상하 배치
   | class                | descriptions        |
   | -------------------- | ------------------- |
   | align-self-start     | 상단으로 정렬        |
   | align-self-center    | 중앙으로 정렬        |
   | align-self-end       | 하단으로 정렬        |
+
+- fill (item)
+  | class                | descriptions                       |
+  | -------------------- | ---------------------------------- |
+  | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
+  | flex-grow-1          | 최대크기 ↑ 커짐                     |
+  | flex-shrink-1        | 최소크기 ↑ 작아짐                   |
+  | ms-auto              | 왼쪽에 있는 아이템 왼쪽으로 밀       |
+  | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기  | 
+  | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
+  | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
+  | over-1 ~ 5           | 아이템 순서                         |
+  
+- Align self  (item)  
+  | class                | descriptions  |
+  | -------------------- | ------------- |
+  | align-self-start     | 상단          |
+  | align-self-end       | 하단          |
+  | align-self-center    | 중앙          |
+
+---------
 
 ## color
   ### typo & backgound

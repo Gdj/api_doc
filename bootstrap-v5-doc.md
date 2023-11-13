@@ -72,11 +72,11 @@
   - 간격 
   > `.row` <= 적용  
   > `.col` <= 반영
-
     <table>
       <thead>
         <tr> 
-          <th>class</th><th>descriptions</th>
+          <th>class</th>
+          <th>descriptions</th>
         </tr>
       </thead>
       <tbody>
@@ -184,11 +184,11 @@
   - 간격 
   > `.grid`  <= 적용  
   > `.g-col` <= 반영
-
     <table>
       <thead>
         <tr> 
-          <th>class</th><th>descriptions</th>
+          <th>class</th>
+          <th>descriptions</th>
         </tr>
       </thead>
       <tbody>
@@ -210,7 +210,6 @@
              column-gap: $var; (X) 
           </td>
         </tr>
-      
       </tbody>
     </table>
 
@@ -243,7 +242,7 @@
     - `flex-grow-1`   : 최대크기 ↑ 커짐  
     - `flex-shrink-1` : 최소크기 ↑ 작아짐  
     - Auto margins : 
-      + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀지
+      + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀기
       + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
       + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
       + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
@@ -251,7 +250,6 @@
   #### Align self  (item)
     - `align-self-start` : 상단
     - `align-self-end`   : 하단
-    - `align-self-center`: 중앙
     - `align-self-center`: 중앙
     - `align-self-baseline`: 기준선
     - `align-self-stretch`:  영역 채우기
