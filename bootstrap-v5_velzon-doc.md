@@ -1,5 +1,7 @@
 # Bootstrap-v5 Velzon
-- [LAYOUT](#layou)
+- [LAYOUT](#layout)
+- [SIZING](#sizing)
+- [SPACING](#spacing)
 - [COLOR](#color)
 - [TYPOGRAPHY](#typography)
 - [BADGE](#badge)
@@ -9,6 +11,8 @@
 
 > `@` (확장된 요소)  
 > [velzon sample URL](https://themesbrand.com/velzon/html/default/index.html)
+
+---------
 
 ## LAYOUT
 ### row
@@ -103,6 +107,167 @@
 
 ---------
 
+## SIZING
+  - width, height : unit(%)
+    <table>
+      <thead>
+        <tr> 
+          <th> 종류 </th>
+          <th> 25% </th>
+          <th> 50% </th>
+          <th> 75% </th>
+          <th> 100% </th>
+          <th> auto </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>width</th>
+          <td>.w-25</td>
+          <td>.w-50</td>
+          <td>.w-75</td>
+          <td>.w-100</td>
+          <td>.w-auto</td>
+        </tr>
+        <tr>
+          <th>height</th>
+          <td>.h-25</td>
+          <td>.h-50</td>
+          <td>.h-75</td>
+          <td>.h-100</td>
+          <td>.h-auto</td>
+        </tr>
+      </tbody>
+    </table>
+
+  - other
+    <table>
+      <thead>
+        <tr> 
+          <th> max-width:100% </th>
+          <th> max-height:100% </th>
+          <th> width:100vw </th>
+          <th> height:100vh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.mw-100</td>
+          <td>.mh-100</td>
+          <td>.vw-100</td>
+          <td>.vh-100</td>
+        </tr>
+      </tbody>
+    </table>
+### Custom Sizing @
+  - w-X: unit(% !important)
+    <table>
+      <tbody>
+        <tr>
+          <td>.w-10</td>
+          <td>.w-15</td>
+          <td>.w-20</td>
+          <td>.w-22</td>
+          <td>.w-25</td>
+          <td>.w-30</td>
+          <td>.w-40</td>
+        </tr>
+        <tr>
+          <td>.w-45</td>
+          <td>.w-50</td>
+          <td>.w-55</td>
+          <td>.w-60</td>
+          <td>.w-70</td>
+          <td>.w-80</td>
+          <td>.w-auto</td>
+        </tr>
+      </tbody>
+    </table>
+
+  - wpx-X : 
+    + interval : 10px 
+    + range : 10~1000px
+    + unic(px !important)
+  - hpx-X : 
+    + interval : 10px
+    + range : 10~300px
+    + unic(px !important)
+
+---------    
+
+## SPACING
+  - magin, padding : X(1~5)
+  <table>
+    <thead>
+      <tr> 
+        <th> 종류 </th>
+        <th> 위 </th>
+        <th> 아래 </th>
+        <th> 왼쪽 </th>
+        <th> 오른쪽 </th>
+        <th> 상하 </th>
+        <th> 좌우 </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>margin</th>
+        <td>.mt-X</td>
+        <td>.mb-X-</td>
+        <td>.ms-X-</td>
+        <td>.me-X-</td>
+        <td>.my-X-</td>
+        <td>.mx-X-</td>
+      </tr>
+      <tr>
+        <th>padding</th>
+        <td>.pt-X</td>
+        <td>.pb-X</td>
+        <td>.ps-X</td>
+        <td>.pe-X</td>
+        <td>.py-X</td>
+        <td>.px-X</td>
+      </tr>
+    </tbody>
+  </table>
+  
+### Custom spacing @
+  - magin : X(1~5)
+  <table>
+    <thead>
+      <tr> 
+        <th> -.25rem </th>
+        <th> -.5rem </th>
+        <th> -1rem </th>
+        <th> -1.5rem </th>
+        <th> -3.rem </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.mt-m1</td>
+        <td>.mt-m2</td>
+        <td>.mt-m3</td>
+        <td>.mt-m4</td>
+        <td>.mt-m5</td>
+      </tr>
+      <tr>
+        <td>.mb-m1</td>
+        <td>.mb-m2</td>
+        <td>.mb-m3</td>
+        <td>.mb-m4</td>
+        <td>.mb-m5</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  - padding
+    + .py-2_5 : top, bottom (.75rem)
+    + .ps-2_5 : left  (.75rem)
+    + .pe-2_5 : right (.75rem)
+
+---------
+
 ## color
   ### typo & backgound
   - text-색이름 : [primary, secondary, success, info, warning, danger, light, dark]
@@ -180,10 +345,15 @@
   | -------------- | ------------ | ------------ | ------------ | 
   | `lh-1`         | `lh-sm`      | `lh-base`    | `lh-lg`      | 
 
-### 정열 (class)
+### 정열 horizontal  ↔  (class)
   | class          | class           | class        |
   | -------------- | --------------- | ------------ |
   | `text-start`   | `text-end`      | `text-center`|
+
+### 정열 vertical ↕ (class)
+  | class          | class           | class          |
+  | -------------- | --------------- | -------------- |
+  | `align-top`    | `align-middle`  | `align-bottom` |
   
 ### 데코 (class)
  - `fw-bold`                     : 굵게
@@ -203,11 +373,10 @@
 > 툴팁 대상에 요소 추가 
  - data-bs-toggle="tooltip" data-bs-title="툴팁내용"  data-bs-html="true"
 
-
 ---------
 
 ## BADGE
-  - type 1
+  - type 1 (상태 기본)
   ``` html
     <span class="badge badge-outline-info">신청 전</span>
     <span class="badge badge-outline-primary">임시저장</span>
@@ -216,11 +385,11 @@
     <span class="badge badge-outline-danger">반려</span>
     <span class="badge badge-outline-light">종료</span>
   ```
-  - type 2
+  - type 2 (약어 상태)
   ``` html
     <span class="badge badge-soft-primary fs-11">옥</span>
   ```
-  - type 3
+  - type 3 (게시판 상태)
   ``` html
     <span class="badge badge-pill bg-danger" data-key="t-!">!</span>
     <span class="badge badge-pill bg-danger" data-key="t-N">N</span>
@@ -269,9 +438,7 @@
     </div>
     ```
 
-
 ---------
-
 
 ## TABLE
 
@@ -292,7 +459,7 @@
   | -------------- | --------------- | ------------ |
   | `text-start`   | `text-end`      | `text-center`|
 
-- 세로 정렬 
+- 세로 정렬  (텍스트 정렬과 동일)
   | class          | class           | class          |
   | -------------- | --------------- | -------------- |
   | `align-top`    | `align-middle`  | `align-bottom` |
@@ -304,8 +471,8 @@
     <label class="form-check-label" for="tableCheck1-3"></label> 
   </div>
   ```
----------
 
+---------
 
 ## MODAL
 ### modal size

@@ -423,13 +423,60 @@
 
 ## sizing
   - [API sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
-  - width : (w-25, w-50, w-75, w-100, w-auto) (25%, 50%, 75%, 100%)
-  - height : (h-25, h-50, h-75, h-100, h-auto) (25%, 50%, 75%, 100%)
-  - other :  
-    max-width: (mw-100), max-width: (mh-100), width 100vw: (vw-100), height 100vh: (vh-100)
+  - width, height : unit(%)
+    <table>
+      <thead>
+        <tr> 
+          <th> 종류 </th>
+          <th> 25% </th>
+          <th> 50% </th>
+          <th> 75% </th>
+          <th> 100% </th>
+          <th> auto </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>width</th>
+          <td>.w-25</td>
+          <td>.w-50</td>
+          <td>.w-75</td>
+          <td>.w-100</td>
+          <td>.w-auto</td>
+        </tr>
+        <tr>
+          <th>height</th>
+          <td>.h-25</td>
+          <td>.h-50</td>
+          <td>.h-75</td>
+          <td>.h-100</td>
+          <td>.h-auto</td>
+        </tr>
+      </tbody>
+    </table>
+
+  - other
+    <table>
+      <thead>
+        <tr> 
+          <th> max-width:100% </th>
+          <th> max-height:100% </th>
+          <th> width:100vw </th>
+          <th> height:100vh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.mw-100</td>
+          <td>.mh-100</td>
+          <td>.vw-100</td>
+          <td>.vh-100</td>
+        </tr>
+      </tbody>
+    </table>
 
 ## spacing
-  - [API sizing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+  - [API spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
   - X : 1~5
   <table>
     <thead>
