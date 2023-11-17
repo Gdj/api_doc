@@ -336,9 +336,13 @@
   | `fs-22`        | `fs-23`        | `fs-24`        | `fs-36`        | `fs-48`        |                |
 
 ### 폰트 굵기 (굵은 > 얇은)
-  | class          | class        | class        | class        | class        | class        | class        | class        | class        |  
-  | -------------- | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |  
-  | `fw-bold`      | `fw-bolder`  | `fw-semibold`| `fw-medium`  | `fw-normal`  | `fw-light`   | `fw-lighter` | `fst-italic` | `fst-normal` | 
+  | class(700)     | class(bolder)  | class(600)     | class(500)   | class(400)   | class(300)   | class(lighter) | 
+  | -------------- | -------------- | -------------- | ------------ | ------------ | ------------ | -------------- | 
+  | `fw-bold`      | `fw-bolder`    | `fw-semibold`  | `fw-medium`  | `fw-normal`  | `fw-light`   | `fw-lighter`   | 
+
+  |  class       | class        |  
+  | ------------ | ------------ |  
+  | `fst-italic` | `fst-normal` | 
 
 ### 라인 하이트 (class)
   | class          | class        | class        | class        | 
