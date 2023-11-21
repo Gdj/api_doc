@@ -79,14 +79,14 @@
   | align-items-end      | 하단으로 정렬        |
 
 > flex 자식 요소에 직접 적용
-- 상하 배치
+- 상하 Align self  (item)  
   | class                | descriptions        |
   | -------------------- | ------------------- |
   | align-self-start     | 상단으로 정렬        |
   | align-self-center    | 중앙으로 정렬        |
   | align-self-end       | 하단으로 정렬        |
 
-- fill (item)
+- 좌우 fill (item)
   | class                | descriptions                       |
   | -------------------- | ---------------------------------- |
   | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
@@ -98,12 +98,6 @@
   | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
   | over-1 ~ 5           | 아이템 순서                         |
   
-- Align self  (item)  
-  | class                | descriptions  |
-  | -------------------- | ------------- |
-  | align-self-start     | 상단          |
-  | align-self-end       | 하단          |
-  | align-self-center    | 중앙          |
 
 ---------
 
@@ -382,6 +376,7 @@
 ## BADGE
   - type 1 (상태 기본)
   ``` html
+    <span class="badge badge-outline-primary">기본값</span>
     <span class="badge badge-outline-info">신청 전</span>
     <span class="badge badge-outline-primary">임시저장</span>
     <span class="badge badge-outline-warning">대기</span>
