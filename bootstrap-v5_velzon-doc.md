@@ -7,6 +7,7 @@
 - [BADGE](#badge)
 - [BUTTON](#button)
 - [TABLE](#table)
+- [SCROLL](#scroll)
 - [MODAL](#modal)
 
 > `@` (확장된 요소)  
@@ -361,11 +362,18 @@
  - +`linkline`                   : 링크 하단 라인
  - +`link_line`                  : 링크 가상 라인 대상타겟이 (inline, inline-block) 이여야 하며, 폰트속성에 따라 다르게 보일 여지 있음. 
 
+### 텍스트 넘침
+- 단어 줄바꿈 : `.text-wrap`
+- 줄바꿈 안함 : `.text-nowrap`
+- 강제 줄바꿈 : `.text-break`
+- 말줄임 (d-inline-block) : `.text-truncate`
 
 ### 말줄임 요소 `@`
 > 말줄임 요소는 적용대상이 블럭 요소일때 적용됩니다. 인라인 요소일때는 `d-block`클래스 추가. 
  - `ellip`    : 한 줄 말줄임.
  - `ellip-2`  : 2줄 말줄임.
+
+
 
 ### 툴팁 플러그인 적용
 > 툴팁 대상에 요소 추가 
@@ -470,6 +478,16 @@
     <label class="form-check-label" for="tableCheck1-3"></label> 
   </div>
   ```
+
+---------
+
+## SCROLL
+### 플러그인 스크롤 
+- Y, X 스크롤 : 적용타겟 `data-simplebar` 속성 추가, 속성에 맞는 크기 지정 style="max-height: **px" or style="max-width: **px"
+
+### css 스크롤 `@`
+- Y 적용타겟 `.scroll-type` 클래스 추가, style="max-height: **px"
+- X 적용타겟 `.scroll-type.typeX` 클래스 추가, style="max-width: **px"
 
 ---------
 

@@ -383,11 +383,11 @@
   - `text-decoration-line-through` : 쉬소선
   - `text-decoration-line-none`    : 데코 레이션 삭제
 
-
   ### 텍스트 넘침
   - 단어 줄바꿈 : `.text-wrap`
   - 줄바꿈 안함 : `.text-nowrap`
   - 강제 줄바꿈 : `.text-break`
+  - 말줄임 (d-inline-block) : `.text-truncate`
 
 ## overflow
   - [API Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
