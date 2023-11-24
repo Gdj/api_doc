@@ -1,6 +1,6 @@
 # bootstrap-v5-doc
 
-- [Grid system ](#grid-system)
+- [Grid system](#grid-system)
 - [passion](#passion)
 - [color](#color)
 - [display](#display)
@@ -20,6 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" ></script>
 ```
 
+---------
 
 ## Grid system
   ### container
@@ -214,46 +215,67 @@
   - 컬럼 시작 :  `g-start-(1~12)`, `grid-column-start`
   - 컬럼 종료 :  `g-end-(1~12)`, `grid-column-end`
 
+---------
+
 ## passion
   ### flex
   - [API flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
+  ``` html
+    <div class="d-flex flex-XXX">...</div>
+    <div class="d-flex justify-content-XXX">...</div>
+    <div class="d-flex align-items-XXX">...</div>
+  ```
+  #### - Wrapping 
+  | class                    | descriptions                  |
+  | ------------------------ | ----------------------------- |
+  | `flex-nowrap`            | (default) 한 라인으로 정렬     |
+  | `flex-wrap`              | 넘치면 줄바꿈 되어 정렬         |
+
+
   #### - justify content
-  ``` html
-  <div class="d-flex justify-content-start">...</div>
-  <div class="d-flex justify-content-end">...</div>
-  <div class="d-flex justify-content-center">...</div>
-  <div class="d-flex justify-content-between">...</div>
-  <div class="d-flex justify-content-around">...</div>
-  <div class="d-flex justify-content-evenly">...</div>
-  ```
+  | class                    | descriptions                        |
+  | ------------------------ | ----------------------------------- |
+  | justify-content-start    | → 좌측정렬                           |
+  | justify-content-end      | ← 우측정렬                           |
+  | justify-content-center   | ↔ 중앙정렬                           |
+  | justify-content-between  |┃ ↔ ┃ 양끝정열                       |
+  | justify-content-around   |┃ ↔ ┃ 컨텐츠 여백 동일 하게 정렬      |
+  | justify-content-evenly   |┃ ↔ ┃ 컨텐츠 중복 여백 동일하게 정렬  |
+
+
   #### - Align items
-  ``` html
-  <div class="d-flex align-items-start">...</div>
-  <div class="d-flex align-items-end">...</div>
-  <div class="d-flex align-items-center">...</div>
-  <div class="d-flex align-items-baseline">...</div>
-  <div class="d-flex align-items-stretch">...</div>
-  ```
+  | class                    | descriptions                        |
+  | ------------------------ | ----------------------------------- |
+  | align-items-start        | ↓ 상단 에서부터 정렬                 |
+  | align-items-end          | ↑ 하단 에서부터 정렬                 |
+  | align-items-center       | ↕ 중앙 에버부터 정렬                 |
+  | align-items-stretch      | ↕  컨텐츠 크기 채움                  |
+
 
   #### fill (item)   
-  - `flex-fill` : 수평 요소를 컨테이너 크기만큼 채움
-  - `flex-grow-1`   : 최대크기 ↑ 커짐  
-  - `flex-shrink-1` : 최소크기 ↑ 작아짐  
-  - Auto margins : 
-    + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀기
-    + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
-    + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
-    + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
-    + `over-1 ~ 5` : 아이템 순서
+  - 좌우 fill & Auto margins (item)
+  | class                | descriptions                       |
+  | -------------------- | ---------------------------------- |
+  | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
+  | flex-grow-1          | 최대크기 ↑ 커짐                     |
+  | flex-shrink-1        | 최소크기 ↑ 작아짐                   |
+  | ms-auto              | 왼쪽에 있는 아이템 왼쪽으로 밀       |
+  | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기  | 
+  | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
+  | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
+  | over-1 ~ 5           | 아이템 순서                         |
+
   #### Align self (item)   
-  - `align-self-start` : 상단
-  - `align-self-end`   : 하단
-  - `align-self-center`: 중앙
-  - `align-self-baseline`: 기준선
-  - `align-self-stretch`:  영역 채우기
+  - 상하 Align self  (item)  
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-self-start     | 상단으로 정렬        |
+  | align-self-end       | 하단으로 정렬        |
+  | align-self-center    | 중앙으로 정렬        |
+  | align-self-baseline  | 기준선              |
+  | align-self-stretch   | 영역 채우기         |
+
   
-
-
 
   ### float
   - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
@@ -276,7 +298,7 @@
     <p class="text-end">End aligned text on all viewport sizes.</p>
   ```
 
-
+---------
 
 ## color
   ### typo & backgound
@@ -349,13 +371,14 @@
     <span class="border border-white"></span>
   ```
 
-
+---------
 
 ## display
   - [API display](https://getbootstrap.com/docs/5.3/utilities/display/)
-  - 기본 사용 : `d-inline-block, d-inline, d-block, d-non`
+  - 기본 사용 : `d-inline-block, d-inline, d-block, d-none`
   - 반응형 사용 : `d-(sm, md, lg, xl, xxl)-block` 
 
+---------
 
 ## text 
   - [API text](https://getbootstrap.com/docs/5.3/utilities/text/)
@@ -389,6 +412,8 @@
   - 강제 줄바꿈 : `.text-break`
   - 말줄임 (d-inline-block) : `.text-truncate`
 
+---------
+
 ## overflow
   - [API Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
   - overflow-y 
@@ -406,6 +431,8 @@
     <div class="overflow-x-scroll">...</div>
     ```
 
+---------
+
 ## position
   - [API position](https://getbootstrap.com/docs/5.3/utilities/position/)
   - 속성 
@@ -420,6 +447,8 @@
     (.top-0, .start-50, .bottom-0, .end-50)
   - 위치 중심
     (.translate-middle, .translate-middle-x, .translate-middle-y)
+
+---------
 
 ## sizing
   - [API sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
@@ -475,6 +504,8 @@
       </tbody>
     </table>
 
+---------
+
 ## spacing
   - [API spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
   - X : 1~5
@@ -512,6 +543,7 @@
     </tbody>
   </table>
 
+---------
     
 ## object fit
   - [API Object fit](https://getbootstrap.com/docs/5.3/utilities/object-fit/)
@@ -522,6 +554,7 @@
   <img src="..." class="object-fit-scale border rounded" alt="...">
   <img src="..." class="object-fit-none border rounded" alt="...">
   ```
+---------
 
 ## script UI
 ### Modal 
@@ -560,6 +593,7 @@
   </div>
 ```
 
+---------
 
 ## plugin API link
 - [bootstrap5 doc](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
