@@ -1,5 +1,6 @@
-# Bootstrap-v5 Velzon
+# Bootstrap-v5 Velzon 
 - [LAYOUT](#layout)
+- [UTILITIES](#utilities)
 - [SIZING](#sizing)
 - [SPACING](#spacing)
 - [COLOR](#color)
@@ -106,9 +107,27 @@
   | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
   | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
   | over-1 ~ 5           | 아이템 순서                         |
-  
 
+
+--------- 
+
+## Utilities 
+### border
+  ``` html 
+    <div class="border"></div>
+  ```
+    + 라인생성 : border, border-start, border-end, border-top, border-bottom
+    + 라인숨김 : border-0, border-start-0, border-end-0, border-top-0, border-bottom-0
+    + 라인 색  : border-[primary, secondary, success, danger, warning, info, light, dark]-[subtle]
+
+### rounded :
+  ``` html 
+    <div class="rounded"></div>
+  ```
+    + 보더생성 : rounded, rounded-start, rounded-end, rounded-top, rounded-bottom, rounded-circle, rounded-pill
+    + 보더굵기 : rounded-0, rounded-1, rounded-2, rounded-3, rounded-4, rounded-5
 ---------
+
 
 ## SIZING
   - width, height : unit(%)
@@ -313,10 +332,7 @@
   - class : `text-opacity-75 text-opacity-50 text-opacity-25`
             `opacity-100 opacity-75 opacity-50 opacity-25`
   
-  ### borders
-  ``` html 
-    <span class="border"></span>
-  ```
+
 
 ---------
 
