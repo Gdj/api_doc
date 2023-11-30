@@ -253,6 +253,46 @@
     </tbody>
   </table>
   
+  - gap 
+   <table>
+    <thead>
+      <tr> 
+        <th> 0rem </th>
+        <th> .25rem </th>
+        <th> .5rem </th>
+        <th> 1rem </th>
+        <th> 1.5rem </th>
+        <th> 3.rem </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>gap-0</td>
+        <td>gap-1</td>
+        <td>gap-2</td>
+        <td>gap-3</td>
+        <td>gap-4</td>
+        <td>gap-5</td>
+      </tr>
+      <tr>
+        <td>row-gap-0</td>
+        <td>row-gap-1</td>
+        <td>row-gap-2</td>
+        <td>row-gap-3</td>
+        <td>row-gap-4</td>
+        <td>row-gap-5</td>
+      </tr>
+      <tr>
+        <td>column-gap-0</td>
+        <td>column-gap-1</td>
+        <td>column-gap-2</td>
+        <td>column-gap-3</td>
+        <td>column-gap-4</td>
+        <td>column-gap-5</td>
+      </tr>
+    </tbody>
+  </table> 
+
 ### Custom spacing @
   - magin : X(1~5)
   <table>
