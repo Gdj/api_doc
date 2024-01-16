@@ -1,6 +1,6 @@
 # bootstrap-v5-doc
 
-- [Grid system ](#grid-system)
+- [Grid system](#grid-system)
 - [passion](#passion)
 - [color](#color)
 - [display](#display)
@@ -20,6 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" ></script>
 ```
 
+---------
 
 ## Grid system
   ### container
@@ -69,7 +70,39 @@
       <div class="col">
     </div> 
     ```
-  - 크기 auto : `col`
+  - 간격 
+    + `.row` <= 적용  
+    + `.col` <= 반영
+    <table>
+      <thead>
+        <tr> 
+          <th>class</th>
+          <th>descriptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>g-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             margin-top:$var; padding-left: calc($var * .5); padding-right: calc($var * .5); 
+          </td>
+        </tr>
+        <tr>
+          <td>gy-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             margin-top:$var; 
+          </td>
+        </tr>
+        <tr>
+          <td>gx-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            padding-left: calc($var * .5); padding-right: calc($var * .5); 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  - 반응형 크기 auto : `col`
     <table>
       <thead>
         <tr> 
@@ -84,7 +117,7 @@
       </thead>
       <tbody>
         <tr>
-          <th>컬럼크기</th>
+          <th>컬럼 반응형 크기</th>
           <td>.col-</td>
           <td>.col-sm-</td>
           <td>.col-md-</td>
@@ -104,7 +137,39 @@
       </tbody>
     </table>
 
-  
+  - 강제 위치
+    + `.order-last`  : 컬럼 위치 강제로 뒤로 보내기
+    + `.order-first` : 컬럼 위치 강제로 앞으로 보내기
+
+  - Horizontal 정렬  
+    + `.row` <= 적용  
+    + `.col` <= 반영   
+  | class                    | descriptions         |
+  | ------------------------ | -------------------- |
+  | justify-content-start    | 왼쪽으로 정렬         |
+  | justify-content-center   | 중앙으로 정렬         |
+  | justify-content-end      | 오른쪽으로 정렬       |
+  | justify-content-around   | 좌우 고정비율 간격    |
+  | justify-content-between  | 양끝 정렬             |
+  | justify-content-evenly   | 양끝 `.col` 동일 비율 |
+
+  - Vertical 정렬  
+    + `.row` <= 적용  
+    + `.col` <= 반영   
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-items-start    | 상단으로 정렬        |
+  | align-items-center   | 중앙으로 정렬        |
+  | align-items-end      | 하단으로 정렬        |
+      
+  - Vertical self 정렬  
+    + `.col` <= 적용, 반영   
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-self-start     | 상단으로 정렬        |
+  | align-self-center    | 중앙으로 정렬        |
+  | align-self-end       | 하단으로 정렬        |
+
   ### .grid
   - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
   - 사용:
@@ -115,44 +180,108 @@
       <div>1</div>
     </div>
   ```
+  - 간격 
+    + `.row` <= 적용  
+    + `.col` <= 반영
+    <table>
+      <thead>
+        <tr> 
+          <th>class</th>
+          <th>descriptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            gap: $var; (X, Y)
+          </td>
+        </tr>
+        <tr>
+          <td>row-gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+            row-gap: $var; (Y)
+          </td>
+        </tr>
+        <tr>
+          <td>column-gap-0, ~5 </td>
+          <td>$var : [0rem, 0.25rem, 0.5rem, 1rem, 1.5rem, 3.rem] <br>
+             column-gap: $var; (X) 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
   - 컬럼 시작 :  `g-start-(1~12)`, `grid-column-start`
   - 컬럼 종료 :  `g-end-(1~12)`, `grid-column-end`
+
+---------
 
 ## passion
   ### flex
   - [API flex](https://getbootstrap.com/docs/5.3/utilities/flex/)
-  #### - justify content
   ``` html
-  <div class="d-flex justify-content-start">...</div>
-  <div class="d-flex justify-content-end">...</div>
-  <div class="d-flex justify-content-center">...</div>
-  <div class="d-flex justify-content-between">...</div>
-  <div class="d-flex justify-content-around">...</div>
-  <div class="d-flex justify-content-evenly">...</div>
+    <div class="d-flex flex-XXX">...</div>
+    <div class="d-flex justify-content-XXX">...</div>
+    <div class="d-flex align-items-XXX">...</div>
   ```
-  #### - Align items
-  ``` html
-  <div class="d-flex align-items-start">...</div>
-  <div class="d-flex align-items-end">...</div>
-  <div class="d-flex align-items-center">...</div>
-  <div class="d-flex align-items-baseline">...</div>
-  <div class="d-flex align-items-stretch">...</div>
-  ```
+  #### - Wrapping 
+  | class                    | descriptions                  |
+  | ------------------------ | ----------------------------- |
+  | `flex-nowrap`            | (default) 한 라인으로 정렬     |
+  | `flex-wrap`              | 넘치면 줄바꿈 되어 정렬         |
 
-  #### fill (item)
-    - `flex-fill` : 수평 요소를 컨테이너 크기만큼 채움
-    - `flex-grow-1`   : 최대크기 ↑ 커짐  
-    - `flex-shrink-1` : 최소크기 ↑ 작아짐  
-    - Auto margins : 
-      + `ms-auto` : 왼쪽에 있는 아이템 왼쪽으로 밀지
-      + `me-auto` : 오르쪽에 있는 아이템 오른쪽으로 밀기
-      + `mt-auto` : 왼쪽에 있는 아이템 위로로 밀기
-      + `mb-auto` : 오른쪽에 있는 아이템 아래로 밀기
-      + `over-1 ~ 5` : 아이템 순서
+
+  #### - justify content
+  | class                    | descriptions                        |
+  | ------------------------ | ----------------------------------- |
+  | justify-content-start    | → 좌측정렬                           |
+  | justify-content-end      | ← 우측정렬                           |
+  | justify-content-center   | ↔ 중앙정렬                           |
+  | justify-content-between  |┃ ↔ ┃ 양끝정열                        |
+  | justify-content-around   |┃ ↔ ┃ 컨텐츠 여백 동일 하게 정렬       |
+  | justify-content-evenly   |┃ ↔ ┃ 컨텐츠 중복 여백 동일하게 정렬   |
+
+
+  #### - Align items
+  | class                    | descriptions                        |
+  | ------------------------ | ----------------------------------- |
+  | align-items-start        | ↓ 상단 에서부터 정렬                 |
+  | align-items-end          | ↑ 하단 에서부터 정렬                 |
+  | align-items-center       | ↕ 중앙 에버부터 정렬                 |
+  | align-items-stretch      | ↕  컨텐츠 크기 채움                  |
+
+
+  #### fill (item)   
+  - 좌우 fill & Auto margins (item)  
+
+  | class                | descriptions                       |
+  | -------------------- | ---------------------------------- |
+  | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
+  | flex-grow-1          | 최대크기 ↑ 커짐                     |
+  | flex-shrink-1        | 최소크기 ↑ 작아짐                   |
+  | ms-auto              | 왼쪽에 있는 아이템 왼쪽으로 밀       |
+  | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기  | 
+  | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
+  | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
+  | over-1 ~ 5           | 아이템 순서                        |
+
+  #### Align self (item)   
+  - 상하 Align self  (item)    
+
+  | class                | descriptions        |
+  | -------------------- | ------------------- |
+  | align-self-start     | 상단으로 정렬        |
+  | align-self-end       | 하단으로 정렬        |
+  | align-self-center    | 중앙으로 정렬        |
+  | align-self-baseline  | 기준선              |
+  | align-self-stretch   | 영역 채우기          |
+
+  
 
   ### float
   - [API float](https://getbootstrap.com/docs/5.3/utilities/float/)
-  - ( .float-start, .float-end ) .clearfix 
+  - .clearfix > ( .float-start, .float-end ) : clearfix 하위 클래스
 
   ### vertical 
   ``` html  
@@ -171,7 +300,7 @@
     <p class="text-end">End aligned text on all viewport sizes.</p>
   ```
 
-
+---------
 
 ## color
   ### typo & backgound
@@ -244,31 +373,33 @@
     <span class="border border-white"></span>
   ```
 
-
+---------
 
 ## display
   - [API display](https://getbootstrap.com/docs/5.3/utilities/display/)
-  - 기본 사용 : `d-inline-block, d-inline, d-block, d-non`
+  - 기본 사용 : `d-inline-block, d-inline, d-block, d-none`
   - 반응형 사용 : `d-(sm, md, lg, xl, xxl)-block` 
 
+---------
 
 ## text 
   - [API text](https://getbootstrap.com/docs/5.3/utilities/text/)
   ### 폰트 크기
+  font-size
   - (.fs-1 ~ .fs-6)
   
-  ### 줄간격
+  ### 줄간격 (`line-height`)
   - (lh-1, lh-sm, lh-base, lh-lg)
   
   ### 텍스트 weight & italics
   ``` html  
-  <p class="fw-bold">Bold text.</p>
-  <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
-  <p class="fw-semibold">Semibold weight text.</p>
-  <p class="fw-medium">Medium weight text.</p>
-  <p class="fw-normal">Normal weight text.</p>
-  <p class="fw-light">Light weight text.</p>
-  <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+  <p class="fw-bold">(700)Bold text.</p>
+  <p class="fw-bolder">(bolder)Bolder weight text (relative to the parent element).</p>
+  <p class="fw-semibold">(600)Semibold weight text.</p>
+  <p class="fw-medium">(500)Medium weight text.</p>
+  <p class="fw-normal">(400)Normal weight text.</p>
+  <p class="fw-light">(300)Light weight text.</p>
+  <p class="fw-lighter">(lighter)Lighter weight text (relative to the parent element).</p>
   <p class="fst-italic">Italic text.</p>
   <p class="fst-normal">Text with normal font style</p>
   ```
@@ -277,11 +408,13 @@
   - `text-decoration-line-through` : 쉬소선
   - `text-decoration-line-none`    : 데코 레이션 삭제
 
-
   ### 텍스트 넘침
   - 단어 줄바꿈 : `.text-wrap`
   - 줄바꿈 안함 : `.text-nowrap`
   - 강제 줄바꿈 : `.text-break`
+  - 말줄임 (d-inline-block) : `.text-truncate`
+
+---------
 
 ## overflow
   - [API Overflow](https://getbootstrap.com/docs/5.3/utilities/overflow/)
@@ -300,6 +433,8 @@
     <div class="overflow-x-scroll">...</div>
     ```
 
+---------
+
 ## position
   - [API position](https://getbootstrap.com/docs/5.3/utilities/position/)
   - 속성 
@@ -315,15 +450,66 @@
   - 위치 중심
     (.translate-middle, .translate-middle-x, .translate-middle-y)
 
+---------
+
 ## sizing
   - [API sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)
-  - width : (w-25, w-50, w-75, w-100, w-auto) (25%, 50%, 75%, 100%)
-  - height : (h-25, h-50, h-75, h-100, h-auto) (25%, 50%, 75%, 100%)
-  - other :  
-    max-width: (mw-100), max-width: (mh-100), width 100vw: (vw-100), height 100vh: (vh-100)
+  - width, height : unit(%)
+    <table>
+      <thead>
+        <tr> 
+          <th> 종류 </th>
+          <th> 25% </th>
+          <th> 50% </th>
+          <th> 75% </th>
+          <th> 100% </th>
+          <th> auto </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>width</th>
+          <td>.w-25</td>
+          <td>.w-50</td>
+          <td>.w-75</td>
+          <td>.w-100</td>
+          <td>.w-auto</td>
+        </tr>
+        <tr>
+          <th>height</th>
+          <td>.h-25</td>
+          <td>.h-50</td>
+          <td>.h-75</td>
+          <td>.h-100</td>
+          <td>.h-auto</td>
+        </tr>
+      </tbody>
+    </table>
+
+  - other
+    <table>
+      <thead>
+        <tr> 
+          <th> max-width:100% </th>
+          <th> max-height:100% </th>
+          <th> width:100vw </th>
+          <th> height:100vh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.mw-100</td>
+          <td>.mh-100</td>
+          <td>.vw-100</td>
+          <td>.vh-100</td>
+        </tr>
+      </tbody>
+    </table>
+
+---------
 
 ## spacing
-  - [API sizing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+  - [API spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
   - X : 1~5
   <table>
     <thead>
@@ -359,6 +545,7 @@
     </tbody>
   </table>
 
+---------
     
 ## object fit
   - [API Object fit](https://getbootstrap.com/docs/5.3/utilities/object-fit/)
@@ -369,6 +556,7 @@
   <img src="..." class="object-fit-scale border rounded" alt="...">
   <img src="..." class="object-fit-none border rounded" alt="...">
   ```
+---------
 
 ## script UI
 ### Modal 
@@ -407,6 +595,7 @@
   </div>
 ```
 
+---------
 
 ## plugin API link
 - [bootstrap5 doc](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
