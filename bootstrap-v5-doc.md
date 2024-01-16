@@ -267,12 +267,8 @@
 
 
   #### fill (item)   
-<<<<<<< HEAD
   - 좌우 fill & Auto margins (item)  
 
-=======
-  - 좌우 fill & Auto margins (item)
->>>>>>> c0e6e66f9628af4fe9e61eb4af350cb3ab5734e5
   | class                | descriptions                       |
   | -------------------- | ---------------------------------- |
   | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
@@ -282,29 +278,18 @@
   | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기  | 
   | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
   | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
-<<<<<<< HEAD
   | over-1 ~ 5           | 아이템 순서                        |
 
   #### Align self (item)   
   - 상하 Align self  (item)    
 
-=======
-  | over-1 ~ 5           | 아이템 순서                         |
-
-  #### Align self (item)   
-  - 상하 Align self  (item)  
->>>>>>> c0e6e66f9628af4fe9e61eb4af350cb3ab5734e5
   | class                | descriptions        |
   | -------------------- | ------------------- |
   | align-self-start     | 상단으로 정렬        |
   | align-self-end       | 하단으로 정렬        |
   | align-self-center    | 중앙으로 정렬        |
   | align-self-baseline  | 기준선              |
-<<<<<<< HEAD
   | align-self-stretch   | 영역 채우기          |
-=======
-  | align-self-stretch   | 영역 채우기         |
->>>>>>> c0e6e66f9628af4fe9e61eb4af350cb3ab5734e5
 
   
 
