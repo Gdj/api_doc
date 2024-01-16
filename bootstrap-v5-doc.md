@@ -164,19 +164,11 @@
       
   - Vertical self 정렬  
     + `.col` <= 적용, 반영   
-<<<<<<< HEAD
   | class                | descriptions        |
   | -------------------- | ------------------- |
   | align-self-start     | 상단으로 정렬        |
   | align-self-center    | 중앙으로 정렬        |
   | align-self-end       | 하단으로 정렬        |
-=======
-    | class                | descriptions        |
-    | -------------------- | ------------------- |
-    | align-self-start     | 상단으로 정렬        |
-    | align-self-center    | 중앙으로 정렬        |
-    | align-self-end       | 하단으로 정렬        |
->>>>>>> c0e6e66f9628af4fe9e61eb4af350cb3ab5734e5
 
   ### .grid
   - [API css grid](https://getbootstrap.com/docs/5.3/layout/css-grid/)
