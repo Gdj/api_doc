@@ -225,14 +225,14 @@
     <div class="d-flex justify-content-XXX">...</div>
     <div class="d-flex align-items-XXX">...</div>
   ```
-  #### - Wrapping 
+  #### - Wrapping (flex-wrap)
   | class                    | descriptions                  |
   | ------------------------ | ----------------------------- |
   | `flex-nowrap`            | (default) 한 라인으로 정렬     |
   | `flex-wrap`              | 넘치면 줄바꿈 되어 정렬         |
 
 
-  #### - justify content
+  #### - justify content (justify-content)
   | class                    | descriptions                        |
   | ------------------------ | ----------------------------------- |
   | justify-content-start    | → 좌측정렬                           |
@@ -243,7 +243,7 @@
   | justify-content-evenly   |┃ ↔ ┃ 컨텐츠 중복 여백 동일하게 정렬   |
 
 
-  #### - Align items
+  #### - Align items (align-items)
   | class                    | descriptions                        |
   | ------------------------ | ----------------------------------- |
   | align-items-start        | ↓ 상단 에서부터 정렬                 |
@@ -252,22 +252,22 @@
   | align-items-stretch      | ↕  컨텐츠 크기 채움                  |
 
 
-  #### fill (item)   
+  #### fill (flex)   
   - 좌우 fill & Auto margins (item)  
 
-  | class                | descriptions                       |
-  | -------------------- | ---------------------------------- |
-  | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움    |
-  | flex-grow-1          | 최대크기 ↑ 커짐                     |
-  | flex-shrink-1        | 최소크기 ↑ 작아짐                   |
-  | ms-auto              | 왼쪽에 있는 아이템 왼쪽으로 밀       |
-  | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기  | 
-  | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기       |
-  | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기     |
-  | over-1 ~ 5           | 아이템 순서                        |
+  | class                | descriptions                                                |
+  | -------------------- | ------------------------------------------------------------|
+  | flex-fill            | 수평 요소를 컨테이너 크기만큼 채움  ( flex: 1 1 au to)         |
+  | flex-grow-1          | 최대크기 ↑ 커짐                    ( flex-grow: 1 )          |
+  | flex-shrink-1        | 최소크기 ↑ 작아짐                  ( flex-shrink: 1 )        |
+  | ms-auto              | 왼쪽에 있는 아이템 왼쪽으로 밀      ( margin-left: auto )     |
+  | me-auto              | 오르쪽에 있는 아이템 오른쪽으로 밀기 ( margin-right: auto )    | 
+  | mt-auto              | 왼쪽에 있는 아이템 위로로 밀기      ( margin-top: auto )       |
+  | mb-auto              | 오른쪽에 있는 아이템 아래로 밀기    ( margin-bottom: auto )    |
+  | over-1 ~ 5           | 아이템 순서                                                  | 
 
-  #### Align self (item)   
-  - 상하 Align self  (item)    
+  #### Align self (align-self : flex-XXX)   
+  - 상하 Align self (item)    
 
   | class                | descriptions        |
   | -------------------- | ------------------- |
