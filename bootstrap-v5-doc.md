@@ -246,15 +246,9 @@
   | justify-content-start    | → 좌측정렬                           |
   | justify-content-end      | ← 우측정렬                           |
   | justify-content-center   | ↔ 중앙정렬                           |
-<<<<<<< HEAD
   | justify-content-between  |┃ ↔ ┃ 양끝정열                        |
   | justify-content-around   |┃ ↔ ┃ 컨텐츠 여백 동일 하게 정렬       |
   | justify-content-evenly   |┃ ↔ ┃ 컨텐츠 중복 여백 동일하게 정렬   |
-=======
-  | justify-content-between  |┃ ↔ ┃ 양끝정열                       |
-  | justify-content-around   |┃ ↔ ┃ 컨텐츠 여백 동일 하게 정렬      |
-  | justify-content-evenly   |┃ ↔ ┃ 컨텐츠 중복 여백 동일하게 정렬  |
->>>>>>> c0e6e66f9628af4fe9e61eb4af350cb3ab5734e5
 
 
   #### - Align items
