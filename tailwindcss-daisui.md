@@ -3,14 +3,14 @@
   - CDN : `<link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />`
 
 ## INDEX
-- [◎ Themes](#◎-themes)
-- [◎ Modal](#◎-modal)
+- [◎ Themes](#themes)
+- [◎ Modal](#modal)
 
-### Themes
+### ◎ Themes {#themes}
   - [AIP Themes](https://daisyui.com/docs/themes/)
   - [CDN Themes](https://reacthustle.com/blog/how-to-modify-daisyui-theme-using-cdn)
 
-### Modal
+### ◎ Modal {#modal}
 - [API modal](https://daisyui.com/components/modal/)
 #### default modal (script)
 ``` html

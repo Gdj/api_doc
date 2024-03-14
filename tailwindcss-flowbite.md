@@ -1,14 +1,15 @@
 # flowbite
   - URL : [https://flowbite.com/](https://flowbite.com/)
   - CDN : 
-   ``` html
+  ``` html
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    ```
-- [◎ Modal](#◎-modal)
+  ```
+## INDEX
+- [◎ Modal](#modal)
 
 
-### Modal
+### ◎ Modal {#modal}
 - [API modal](https://daisyui.com/components/modal/)
 #### default modal (script)
 ``` html

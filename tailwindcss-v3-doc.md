@@ -1,16 +1,16 @@
 # tailwindcss-v3-doc
 
-- [◎ Grid system](#◎-grid-system)
-- [◎ passion](#◎-passion)
-- [◎ color](#◎-color)
-- [◎ display](#◎-display)
-- [◎ text](#◎-text)
-- [◎ overflow](#◎-overflow)
-- [◎ position](#◎-position)
-- [◎ sizing](#◎-sizing)
-- [◎ spacing](#◎-spacing)
-- [◎ object fit](#◎-object-fit)
-- [◎ plugin API link](#◎-plugin-api-link)
+- [◎ Grid system](#grid-system)
+- [◎ passion](#passion)
+- [◎ color](#color)
+- [◎ display](#display)
+- [◎ text](#text)
+- [◎ overflow](#overflow)
+- [◎ position](#position)
+- [◎ sizing](#sizing)
+- [◎ spacing](#spacing)
+- [◎ object fit](#object-fit)
+- [◎ plugin API link](#plugin-api-link)
 
 
 ## start
@@ -20,7 +20,7 @@
   ```
   - npm : (https://tailwindcss.com/docs/installation)
   
-## ◎ Grid system
+## ◎ Grid system {#grid-system}
   ### container
   - [AIP container](https://tailwindcss.com/docs/container/)
   - 기본크기 : `.container`
@@ -169,7 +169,7 @@
       </tbody>
     </table>
   
-## ◎ passion
+## ◎ passion {#passion}
   ### .flex
   - [API grid](https://tailwindcss.com/docs/flex-basis)
   - 부모 흐름: flex (flex-wrap, flex-row, flex-col, flex-nowrap)
@@ -276,7 +276,7 @@
     <p class="text-end">End aligned text on all viewport sizes.</p>
     ```
 
-## ◎ color
+## ◎ color {#color}
   - [API customizing-colors](https://tailwindcss.com/docs/customizing-colors)
   - [API background-color](https://tailwindcss.com/docs/background-color)
   - "XXX" => [`text`, `decoration` `bg`, `border`, `divide`, `ring`, `shadow`, `accent`, `caret`]
@@ -322,11 +322,11 @@
   </table>
 
 
-## ◎ display
+## ◎ display {#display}
   - [API display](https://tailwindcss.com/docs/display)
   - 기본 사용 : `block`, `hidden` `inline-block`, `inline`, `flex`, `inline-flex`, `table`, `inline-table`, `table-cell`, `table-column`, `table-row` ...
 
-## ◎ Typography
+## ◎ Typography {#typography}
 ### font-size
   - [API font-size](https://tailwindcss.com/docs/font-size)
   - text-XX : `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-xl`, `text-2~9xl`
@@ -435,7 +435,7 @@
   - [API list-style-type](https://tailwindcss.com/docs/list-style-type)
   - ul 스타일 : `list-none`, `list-disc`, `list-decimal`, `list-image-[url(checkmark.png)]`
 
-## ◎ overflow
+## ◎ overflow {#overflow}
   - [API overflow](https://tailwindcss.com/docs/overflow)
   <table>
     <tbody>
@@ -466,7 +466,7 @@
     </tbody>
   </table>
 
-## ◎ position
+## ◎ position {#position}
   - [API position](https://tailwindcss.com/docs/position)
   - `static`, `fixed`, `absolute`, `relative`, `sticky`
   - 위치 {inset|top|right|bottom|left|start|end}-{size}
@@ -492,7 +492,7 @@
   - 위치(%) {inset|top|right|bottom|left|start|end}-{size}
     `XXX-auto`, `XXX-full`, `XXX-1/4`, `XXX-1/3`, `XXX-1/2`, `XXX-2/3`, `XXX-3/4l`
 
-## ◎ sizing
+## ◎ sizing {#sizing}
 ### width & height
   - [API widht](https://tailwindcss.com/docs/width)
   - [API widht](https://tailwindcss.com/docs/height)
@@ -505,7 +505,7 @@
   - 커스텀 크기 적용 : `w-[XXpx]`, `w-[130px]`
     
 
-## ◎ spacing
+## ◎ spacing {#spacing}
   - [customizing-spacing](https://tailwindcss.com/docs/customizing-spacing)
   - padding, margin
     + .5간격 : XXX-0.5 ~ 3.5 : (width: 0.125rem; /* 2px */)
@@ -551,7 +551,7 @@
       </tbody>
     </table>
 
-## ◎ object fit
+## ◎ object fit {#object-fit}
   - [object fit](https://tailwindcss.com/docs/object-fit)
   - 이미지를 백그라운스 속성처럼 적용.
   ``` html
@@ -562,7 +562,7 @@
   <img src="..." class="object-none border rounded" alt="...">
   ```
 
-## ◎ plugin API link
+## ◎ plugin API link {#plugin-api-link}
 - [tailwindcss3 doc](https://tailwindcss.com/docs/)
 - [tailwindcss 공식유튜브](https://www.youtube.com/c/TailwindLabs)
 - [daisyUI (무료)](https://daisyui.com/)
