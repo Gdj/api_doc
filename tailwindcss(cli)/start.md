@@ -1,6 +1,5 @@
 # tailwindcss
-  - nodejs : 14.21.0 
-
+  - nodejs : 18.17.0 
 
 ## tailwindcss CLI 설치 
   > https://tailwindcss.com/docs/installation
@@ -10,9 +9,19 @@
   - tailwind.config.js 파일 경로 확인.
     ``` js
     module.exports = {
+      /* 적용될 경로 */
       content: ["./src/**/*.{html,js}"],
       theme: {
-        extend: {},
+        /* 기존 선언 변경*/
+        fontSize : {
+          '3xl' : "23px"
+        },
+        /* 확작 새로운 선언 추가 */
+        extend: {
+          fontSize : {
+            'fs33' : "33px"
+          },
+        },
       },
       plugins: [],
     }
