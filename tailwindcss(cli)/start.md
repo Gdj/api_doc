@@ -32,7 +32,6 @@
       @tailwind components;
       @tailwind utilities;
     ```
-  - Tailwindcss 변환실행 : `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
   - src/index.html 생성
     ``` html
       <!doctype html>
@@ -49,4 +48,34 @@
       </body>
       </html>
     ```
-  - 실행 : `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+  ### Tailwindcss node 실행
+    - Tailwindcss 변환실행 : `npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
+  ### Tailwindcss gulp 실행
+    - 추가설치 : `npm i -D gulp-postcss`
+    - gulpfile.js
+    ``` js
+      import gulp         from 'gulp';
+      import gulpSass     from "gulp-sass";
+      import nodeSass     from "node-sass";
+      let sass            = gulpSass(nodeSass);
+      import postCSS      from "gulp-postcss";
+      import tailwindcss  from "tailwindcss";
+      ...
+
+
+      function styles() {
+        return gulp.src("소스경로" + "*.scss")
+          .pipe(sass().on("error", sass.logError))
+          .pipe(postCSS([tailwindcss]))
+          .pipe(gulp.dest("빌드출력경로"))
+      }
+
+      function watch(){
+        gulp.watch("소스경로" + "*.scss", styles);
+      }
+
+      export const dev = gulp.series([styles, watch]);
+
+      /* 실행 : gulp dev */
+    ```
+  
