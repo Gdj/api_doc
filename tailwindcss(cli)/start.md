@@ -12,6 +12,15 @@
       /* 적용될 경로 */
       content: ["./src/**/*.{html,js}"],
       theme: {
+        /* 브레이크 포인트 변경, 추가 */
+        screens: { // 아래의 값들은 min-width이다.
+          mobile: '320px',  // <-- *신규로 추가한 모바일 스크린용 breakpoint prefix
+          sm: '640px',      // sm  : 640px
+          md: '768px',      // md  : 768px
+          lg: '1024px',     // lg  : 1024px
+          xl: '1380px',     // xl  : 1280px
+          '2xl': '1440px',  // xl  : 1536px
+        },
         /* 기존 선언 변경*/
         fontSize : {
           '3xl' : "23px"

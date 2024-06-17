@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwindcss @3.4.4</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="./tailwindcss@3.4.4.js"></script>
+  <link rel="stylesheet" href="tailwindcss_extend.css">
+  <script>
+    function name(params) {
+      tailwind.config = {
+        theme: {
+          screens: { // 아래의 값들은 min-width이다.
+            mobile: '320px',  // <-- *신규로 추가한 모바일 스크린용 breakpoint prefix
+            sm: '640px',   // sm  : 640px
+            md: '768px',   // md  : 768px
+            lg: '1024px',  // lg  : 1024px
+            xl: '1380px',  // xl  : 1280px
+            '2xl': '1440px'  // 2xl : 1536px
+          },
+          /* 확장 새로운 선언 추가 */
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        },
+        corePlugins: {
+        },
+        plugins: [
+        ],
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body  class="bg-gray-300 mobile:bg-gray-700 sm:bg-green-300 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800" >
+  <h1 class="text-3xl font-bold underline bg-slate-200 text-coffee">
+    tailwind.config 파일 내부에 선언
+  </h1>
+
+  <br>
+
+  <h1 class="text-3xl font-bold underline text-clifford">
+    Hello world!
+  </h1>
+
+  <br>
+
+  <div class="lg:content-auto">
+    <h2>{class} lg:content-auto</h2>
+  </div>
+
+  <br>
+
+  <div class="prose">
+    <h2>{class} prose</h2>
+  </div>
+
+
+
+  <div class="flex">
+    <div class="w-1/6 border">w-1/6</div>
+    <div class="w-5/6 border">w-5/6</div>
+  </div>
+  <div class="2xl:w-full xl:w-5/6  lg:w-4/6  md:w-3/6 border">w-full</div>
+
+  <div data-theme="mytheme" class="p-16">
+    <h1>my theme</h1>
+    <button class="btn btn-primary rounded-full">Hello</button>
+    <button class="btn btn-secondary">Hello</button>
+  </div>
+
+  <div data-theme="light" class="p-16">
+    <h1>Light theme</h1>
+    <button class="btn btn-primary rounded-full">Hello</button>
+    <button class="btn btn-secondary">Hello</button>
+  </div>
+
+  <div>
+    <!-- Before extracting a custom class -->
+    <button class="py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+      Save changes
+    </button>
+
+    <!-- After extracting a custom class -->
+    <button class="btn-primary">
+      Save changes
+    </button>
+
+  </div>
+</body>
+</html>
