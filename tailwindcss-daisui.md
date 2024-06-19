@@ -4,7 +4,7 @@
 - CDN :
 
 ```html
-<linkhref="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"rel="stylesheet"type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css"/>
 <script src="https://cdn.tailwindcss.com"></script>
 ```
 
@@ -13,12 +13,12 @@
 - [◎ Themes](#themes)
 - [◎ Modal](#modal)
 
-### ◎ Themes {#themes}
+### ◎ Themes  <a name="themes"></a>
 
 - [AIP Themes](https://daisyui.com/docs/themes/)
 - [CDN Themes](https://reacthustle.com/blog/how-to-modify-daisyui-theme-using-cdn)
 
-### ◎ Modal {#modal}
+### ◎ Modal <a name="modal"></a>
 
 - [API modal](https://daisyui.com/components/modal/)
 

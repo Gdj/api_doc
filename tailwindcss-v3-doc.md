@@ -15,9 +15,10 @@
 ## start
 
 - CDN
-
+최신버젼, 특정버젼
 ```html
-<script src="https://cdn.tailwindcss.com/3.4.3"></script>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.3"></script>
 ```
 
 - npm : (https://tailwindcss.com/docs/installation)

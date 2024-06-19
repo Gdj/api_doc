@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,30 @@
   <title>tailwindcss @2.6.0</title>
   <!-- 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwindcss@3.4.4.js"></script>
     -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <link href="./tailwindcss.css" />
- 
+  <script src="./tailwindcss@3.4.4.js"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" /> -->
+  <link href="./daisyui@2.6.0.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="./tailwindcss.css" /> -->
 </head>
+
 <body>
   <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
-  
+
   <div class="2xl:container border">
     box
   </div>
 
   <br>
   <div class="columns-3">
-    <img class="w-full" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" />
-    <img class="w-full" src="https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3131&q=80" />
-    <img class="w-full" src="https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2902&q=80" />
+    <img class="w-full"
+      src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" />
+    <img class="w-full"
+      src="https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3131&q=80" />
+    <img class="w-full"
+      src="https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2902&q=80" />
   </div>
 
   <br>
@@ -34,10 +39,10 @@
   <div class="flex flex-wrap">
     <div class="basis-1/4 md:basis-1/2 border text-justify">01 04 60</div>
     <div class="basis-1/4 md:basis-1/2 border">02</div>
-    <div class="basis-1/2 md:basis-1/1 border" >03</div>
+    <div class="basis-1/2 md:basis-1/1 border">03</div>
     <div class="basis-1/4 md:basis-1/2 border">01</div>
     <div class="basis-1/4 md:basis-1/2 border">02</div>
-    <div class="basis-1/2 md:basis-1/1 border" >03</div>
+    <div class="basis-1/2 md:basis-1/1 border">03</div>
   </div>
 
   <br>
@@ -63,11 +68,21 @@
 
   <br>
   <div>
-    <div class="w-[130px]"><img class="object-contain border rounded"  src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="..."></div>
-    <div class="w-1/4"><img class="object-cover border rounded"  src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="..."></div>
-    <div class="w-1/4"><img class="object-fill border rounded"  src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="..."></div>
-    <div class="w-1/4"><img class="object-scale-down border rounded" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"  alt="..."></div>
-    <div class="w-1/4"><img class="object-none border rounded"  src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80" alt="..."></div>
+    <div class="w-[130px]"><img class="object-contain border rounded"
+        src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"
+        alt="..."></div>
+    <div class="w-1/4"><img class="object-cover border rounded"
+        src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"
+        alt="..."></div>
+    <div class="w-1/4"><img class="object-fill border rounded"
+        src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"
+        alt="..."></div>
+    <div class="w-1/4"><img class="object-scale-down border rounded"
+        src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"
+        alt="..."></div>
+    <div class="w-1/4"><img class="object-none border rounded"
+        src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2952&q=80"
+        alt="..."></div>
   </div>
 
   <br>
@@ -86,12 +101,13 @@
         <label class="modal-box relative" for="">
           <label for="my-modal-4" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
           <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
-          <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+          <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+          </p>
         </label>
       </label>
-      <script>                 
+      <script>
         var modal_4 = document.querySelector('#my-modal-4');
-        modal_4.addEventListener("change", function($e){
+        modal_4.addEventListener("change", function ($e) {
           console.log($e.target.checked);
         })
       </script>
@@ -110,15 +126,19 @@
       </div>
     </div>
     <style>
-      .modal.show { opacity: 1; visibility: visible; pointer-events:auto;}
+      .modal.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
     </style>
     <script>
       var modalEl = document.getElementById('custom-modal');
-      function popupMenu($b){
+      function popupMenu($b) {
         //modalEl.classList.toggle('show');
-        if($b){
+        if ($b) {
           modalEl.classList.add('show');
-        }else{
+        } else {
           modalEl.classList.remove('show');
         }
       }
@@ -143,8 +163,8 @@
 
     <br>
     <div class="tabs">
-      <a class="tab tab-xs tab-lifted">Large</a> 
-      <a class="tab tab-xs tab-lifted tab-active">Large</a> 
+      <a class="tab tab-xs tab-lifted">Large</a>
+      <a class="tab tab-xs tab-lifted tab-active">Large</a>
       <a class="tab tab-xs tab-lifted">Large</a>
     </div>
 
@@ -160,8 +180,10 @@
       <button class="btn btn-primary rounded-full">Hello</button>
       <button class="btn btn-secondary">Hello</button>
     </div>
-    
+
   </div>
 
 </body>
+
+
 </html>

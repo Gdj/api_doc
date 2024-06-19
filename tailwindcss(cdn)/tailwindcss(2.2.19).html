@@ -5,42 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tailwindcss @3.4.4</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <script src="./tailwindcss@3.4.4.js"></script>
-  <script>
-    function name(params) {
-      tailwind.config = {
-        theme: {
-          screens: { // 아래의 값들은 min-width이다.
-            mobile: '320px',  // <-- *신규로 추가한 모바일 스크린용 breakpoint prefix
-            sm: '640px',   // sm  : 640px
-            md: '768px',   // md  : 768px
-            lg: '1024px',  // lg  : 1024px
-            xl: '1380px',  // xl  : 1280px
-            '2xl': '1440px'  // 2xl : 1536px
-          },
-          /* 확장 새로운 선언 추가 */
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
-          }
-        },
-        corePlugins: {
-        },
-        plugins: [
-        ],
-      }
-    }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style>
+  <title>tailwindcss @2.6.0</title>
+  <!-- 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwindcss@3.4.4.js"></script>
+    -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" /> -->
+  <link href="./tailwindcss@2.2.19.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="./tailwindcss.css" /> -->
 </head>
 
 <body
@@ -73,7 +45,7 @@
     <div class="w-1/6 border">w-1/6</div>
     <div class="w-5/6 border">w-5/6</div>
   </div>
-  <div class="2xl:w-full xl:w-5/6  lg:w-4/6  md:w-3/6 border">2xl:w-full xl:w-5/6 lg:w-4/6 md:w-3/6</div>
+  <div class="2xl:w-full xl:w-5/6  lg:w-4/6  md:w-3/6 border">w-full</div>
 
   <div data-theme="mytheme" class="p-16">
     <h1>my theme</h1>
