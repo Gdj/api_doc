@@ -22,6 +22,14 @@
 ```
 
 - npm : (https://tailwindcss.com/docs/installation)
+Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있다.
+```
+  @layer components {
+    .btn-primary {
+      @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+    }
+  }
+```
 
 ## ◎ Grid syste <a name="grid-system"></a>
 
