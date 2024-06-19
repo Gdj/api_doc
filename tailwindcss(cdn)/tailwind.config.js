@@ -11,6 +11,19 @@ module.exports = {
       '2xl': '1536px',  // xl  : 1536px
     },
 
+    /* 기본컬러변경 */
+    colors: {
+      'blue': '#1fb6ff',
+      'purple': '#7e5bef',
+      'pink': '#ff49db',
+      'orange': '#ff7849',
+      'green': '#13ce66',
+      'yellow': '#ffc82c',
+      'gray-dark': '#273444',
+      'gray': '#8492a6',
+      'gray-light': '#d3dce6',
+    },
+
     /* 확장 새로운 선언 추가 */
     extend: {
       colors: {
