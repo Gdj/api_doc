@@ -310,42 +310,42 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
 - `XXX-inherit`, `XXX-current`, `XXX-transparent`, `XXX-black`, `XXX-white`
 - XXX-XX-50, XXX-XX-100~900, XXX-XX-950
 <table>
-  <tr>
-    <td><span style="background-color:rgb(100 116 139)">.bg-slate-500</span></td>
-    <td><span style="background-color:rgb(107 114 128)">.bg-gray-500</span></td>
-    <td><span style="background-color:rgb(113 113 122)">.bg-zinc-500</span></td>
-    <td><span style="background-color:rgb(115 115 115)">.bg-neutral-500</span></td>
-  </tr>
-  <tr>
-    <td><span style="background-color:rgb(120 113 108)">.bg-stone-500</span></td>
-    <td><span style="background-color:rgb(239 68 68)">.bg-red-500</span></td>
-    <td><span style="background-color:rgb(249 115 22)">.bg-orange-500</span></td>
-    <td><span style="background-color:rgb(245 158 11)">.bg-amber-500</span></td>
-  </tr>
-  <tr>
-    <td><span style="background-color:rgb(234 179 8)">.bg-yellow-500</span></td>
-    <td><span style="background-color:rgb(132 204 22)">.bg-lime-500</span></td>
-    <td><span style="background-color:rgb(34 197 94)">.bg-green-500</span></td>
-    <td><span style="background-color:rgb(16 185 129)">.bg-emerald-500</span></td>
-  </tr>
-  <tr>
-    <td><span style="background-color:rgb(20 184 166)">.bg-teal-500</span></td>
-    <td><span style="background-color:rgb(6 182 212)">.bg-cyan-500</span></td>
-    <td><span style="background-color:rgb(14 165 233)">.bg-sky-500</span></td>
-    <td><span style="background-color:rgb(59 130 246)">.bg-blue-500</span></td>
-  </tr>
-  <tr>
-    <td><span style="background-color:rgb(99 102 241)">.bg-indigo-500</span></td>
-    <td><span style="background-color:rgb(139 92 246)">.bg-violet-500</span></td>
-    <td><span style="background-color:rgb(168 85 247)">.bg-purple-500</span></td>
-    <td><span style="background-color:rgb(217 70 239)">.bg-fuchsia-500</span></td>
-  </tr>
-  <tr>
-    <td><span style="background-color:rgb(236 72 153)">.bg-pink-500</span></td>
-    <td><span style="background-color:rgb(244 63 94)">.bg-rose-500</span></td>
-    <td>-</td>
-    <td>-</td>
-  </tr>
+    <tr>
+      <td style="background-color:#fb2c36">bg-red-500</td>
+      <td style="background-color:#ff6900">bg-orange-500</td>
+      <td style="background-color:#fe9a00">bg-amber-500</td>
+      <td style="background-color:#f0b100">bg-yellow-500</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="background-color:#7ccf00">bg-lime-500</td>
+      <td style="background-color:#00c951">bg-green-500</td>
+      <td style="background-color:#00bc7d">bg-emerald-500</td>
+      <td style="background-color:#00bba7">bg-teal-500</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="background-color:#00b8db">bg-cyan-500</td>
+      <td style="background-color:#00a6f4">bg-sky-500</td>
+      <td style="background-color:#2b7fff">bg-blue-500</td>
+      <td style="background-color:#615fff">bg-indigo-500</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td style="background-color:#8e51ff">bg-violet-500</td>
+      <td style="background-color:#ad46ff">bg-purple-500</td>
+      <td style="background-color:#e12afb">bg-fuchsia-500</td>
+      <td style="background-color:#f6339a">bg-pink-500</td>
+      <td style="background-color:#ff2056">bg-rose-500</td>
+    </tr>
+    <tr>
+      <td style="background-color:#62748e">bg-slate-500</td>
+      <td style="background-color:#6a7282">bg-gray-500</td>
+      <td style="background-color:#71717b">bg-zinc-500</td>
+      <td style="background-color:#737373">bg-neutral-500</td>
+      <td style="background-color:#79716b">bg-stone-500</td>
+    </tr>
+  <table>
 </table>
 
 ## ◎ display <a name="display"></a>
@@ -519,18 +519,18 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
   - 2간격 : XXX-14 ~ 16
   <table>
     <tr>
-      <td>inset-0<td>
-      <td>top-0<td>
-      <td>right-0<td>
-      <td>bottom-0<td>
-      <td>left-0<td>
+      <td>inset-0</td>
+      <td>top-0</td>
+      <td>right-0</td>
+      <td>bottom-0</td>
+      <td>left-0</td>
     </tr>
     <tr>
-      <td>XXX-x-0<td>
-      <td>XXX-y-0<td>
-      <td>XXX-px<td>
-      <td>XXX-x-px<td>
-      <td>XXX-y-px<td>
+      <td>XXX-x-0</td>
+      <td>XXX-y-0</td>
+      <td>XXX-px</td>
+      <td>XXX-x-px</td>
+      <td>XXX-y-px</td>
     </tr>
   </table>
 - 위치(%) {inset|top|right|bottom|left|start|end}-{size}
@@ -541,14 +541,31 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
 ### width & height
 
 - [API widht](https://tailwindcss.com/docs/width)
-- [API widht](https://tailwindcss.com/docs/height)
+- [API height](https://tailwindcss.com/docs/height)
 - w-XX, h-XX
-  - .5간격 : XXX-0.5 ~ 3.5 : (width: 0.125rem; /_ 2px _/)
-  - 1간격 : XXX-4 ~ 12
-  - 2간격 : XXX-14 ~ 16
+  + .5간격 : XXX-0.5 ~ 3.5 : (width: 0.125rem; /_ 2px _/)
+  + 1간격 : XXX-4 ~ 12
+  + 2간격 : XXX-14 ~ 16
 - min-w-XX, max-w-XX, min-h-XX, max-h-XX
-  - 0, full, min, max, fit
+  + 0, full, min, max, fit
 - 커스텀 크기 적용 : `w-[XXpx]`, `w-[130px]`
+
+### aspect-ratio
+- [API aspect-ratio](https://tailwindcss.com/docs/aspect-ratio)
+  <table>
+    <tr>
+      <th>커스텀비율</th>
+      <th>정사각형</th>
+      <th>비디오비율16:9</th>
+      <th>auto</th>
+    </tr>
+    <tr>
+      <td>aspect-3/2</td>
+      <td>aspect-square</td>
+      <td>aspect-video</td>
+      <td>aspect-auto</td>
+    </tr>
+  </table>
 
 ## ◎ spacing <a name="spacing"></a>
 
