@@ -5,6 +5,7 @@
 **INDEX**
 
   - [◎ Setting](#setting)
+  - [◎ Color](#Color)
   - [◎ Themes](#themes)
   - [◎ Modal](#modal)
 
@@ -55,6 +56,45 @@
       }
     ```
 
+
+## ◎ Color  <a name="color"></a>
+  - bg-{COLOR_NAME}
+  - btn-XXX, bg-XXX, text-XXX, accent-XXX, placeholder-XXX, decoration-XXX
+
+  <table>
+    <tbody>
+      <tr>
+        <td style="background-color:#5f5cff">primary</td>
+        <td style="background-color:#edf1ff">primary-content</td>
+        <td style="background-color:#f53199">secondary</td>
+        <td style="background-color:#fae6f1">secondary-content</td>
+      </tr>
+      <tr>
+        <td style="background-color:#00d4bb">accent</td>
+        <td style="background-color:#084d49">accent-content</td>
+        <td style="background-color:#08080a">neutral</td>
+        <td style="background-color:#e6e6e8">neutral-content</td>
+      </tr>
+      <tr>
+        <td style="background-color:#00d4bb">accent</td>
+        <td style="background-color:#084d49">accent-content</td>
+        <td style="background-color:#08080a">neutral</td>
+        <td style="background-color:#e6e6e8">neutral-content</td>
+      </tr>
+      <tr>
+        <td style="background-color:#00bbff">info</td>
+        <td style="background-color:#042e49">info-content</td>
+        <td style="background-color:#00d390">success</td>
+        <td style="background-color:#004c39">success-content</td>
+      </tr>
+      <tr>
+        <td style="background-color:#fcb700">warning</td>
+        <td style="background-color:#793205">warning-content</td>
+        <td style="background-color:#ff627d">error</td>
+        <td style="background-color:#4b0319">error-content</td>
+      </tr>
+    </tbody>
+  </table>
 
 ## ◎ Themes  <a name="themes"></a>
   - [AIP Themes](https://daisyui.com/docs/themes/)
