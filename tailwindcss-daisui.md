@@ -5,12 +5,12 @@
 **INDEX**
 
   - [◎ Setting](#setting)
-  - [◎ Color](#Color)
-  - [◎ Badge](#Badge)
-  - [◎ Button](#Button)
-  - [◎ Table](#Table)
-  - [◎ Tooltip](#Tooltip)
-  - [◎ DropDown](#DropDown)
+  - [◎ Color](#color)
+  - [◎ Badge](#badge)
+  - [◎ Button](#button)
+  - [◎ Table](#table)
+  - [◎ Tooltip](#tooltip)
+  - [◎ DropDown](#dropdown)
   - [◎ Modal](#modal)
   - [◎ Themes](#themes)
 
@@ -62,7 +62,7 @@
     ```
 
 
-## ◎ Color  <a name="Color"></a>
+## ◎ Color  
   - bg-{COLOR_NAME}
   - btn-XXX, bg-XXX, text-XXX, accent-XXX, placeholder-XXX, decoration-XXX
 
@@ -101,7 +101,7 @@
     </tbody>
   </table>
 
-## ◎ Badge <a name="Badge"></a>
+## ◎ Badge 
   - base Class : `badge`
   - badge Color : badge-XXX
     <table>
@@ -137,7 +137,7 @@
     </table>
 
   
-## ◎ Button  <a name="Button"></a>
+## ◎ Button  
   - base Class : `btn`
   - button Color : btn-XXX
     <table>
@@ -177,10 +177,10 @@
       </tr>
     </table>
 
-## ◎ Table  <a name="Table"></a>
+## ◎ Table  
 
 
-## ◎ Tooltip  <a name="Tooltip"></a>
+## ◎ Tooltip  
   - table style : `<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">`
   - Tooltip 방향 : tooltip-XXX
     <table>
@@ -220,7 +220,7 @@
 
 
 
-## ◎ DropDown  <a name="DropDown"></a>
+## ◎ DropDown  
   - 드롭다운 위치지정 : dropdown dropdown-XXX
     + 버튼 시작 / 가운데 / 끝 위치: `start`, `center`, `end`
     + 버튼 위 /  왼쪽 / 오른쪽: `top`, `left`, `right`
@@ -237,11 +237,10 @@
 
 
 
-## ◎ Modal <a name="modal"></a>
+## ◎ Modal 
   - [API modal](https://daisyui.com/components/modal/)
 
 ### default modal (script)
-
   ```html
   <!-- The button to open modal -->
   <label for="my-modal-4" class="btn">open modal</label>
