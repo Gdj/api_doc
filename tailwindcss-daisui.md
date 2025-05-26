@@ -6,8 +6,13 @@
 
   - [◎ Setting](#setting)
   - [◎ Color](#Color)
-  - [◎ Themes](#themes)
+  - [◎ Badge](#Badge)
+  - [◎ Button](#Button)
+  - [◎ Table](#Table)
+  - [◎ Tooltip](#Tooltip)
+  - [◎ DropDown](#DropDown)
   - [◎ Modal](#modal)
+  - [◎ Themes](#themes)
 
 ## Setting
 - CDN :
@@ -57,7 +62,7 @@
     ```
 
 
-## ◎ Color  <a name="color"></a>
+## ◎ Color  <a name="Color"></a>
   - bg-{COLOR_NAME}
   - btn-XXX, bg-XXX, text-XXX, accent-XXX, placeholder-XXX, decoration-XXX
 
@@ -96,9 +101,141 @@
     </tbody>
   </table>
 
-## ◎ Themes  <a name="themes"></a>
-  - [AIP Themes](https://daisyui.com/docs/themes/)
-  - [CDN Themes](https://reacthustle.com/blog/how-to-modify-daisyui-theme-using-cdn)
+## ◎ Badge <a name="Badge"></a>
+  - base Class : `badge`
+  - badge Color : badge-XXX
+    <table>
+      <tr>
+        <td>neutral</td>
+        <td>primary</td>
+        <td>secondary</td>
+        <td>accent</td>
+        <td>info</td>
+        <td>success</td>
+        <td>warning</td>
+        <td>error</td>
+      </tr>
+    </table>
+  - badge size : badge-XXX
+    <table>
+      <tr>
+        <td>xs</td>
+        <td>sm</td>
+        <td>md (default)</td>
+        <td>lg</td>
+        <td>xl</td>
+      </tr>
+    </table>
+  - button Style : btn-XXX
+    <table>
+      <tr>
+        <td>outline</td>
+        <td>dash</td>
+        <td>soft</td>
+        <td>ghost</td>
+      </tr>
+    </table>
+
+  
+## ◎ Button  <a name="Button"></a>
+  - base Class : `btn`
+  - button Color : btn-XXX
+    <table>
+      <tr>
+        <td>neutral</td>
+        <td>primary</td>
+        <td>secondary</td>
+        <td>accent</td>
+        <td>info</td>
+        <td>success</td>
+        <td>warning</td>
+        <td>error</td>
+      </tr>
+    </table>
+  - button size : btn-XXX
+    <table>
+      <tr>
+        <td>xs</td>
+        <td>sm</td>
+        <td>md (default)</td>
+        <td>lg</td>
+        <td>xl</td>
+      </tr>
+    </table>
+  - button Style : btn-XXX
+    <table>
+      <tr>
+        <td>outline</td>
+        <td>dash</td>
+        <td>soft</td>
+        <td>ghost</td>
+        <td>link</td>
+        <td>active</td>
+        <td>disabled</td>
+        <td>square</td>
+        <td>circle</td>
+      </tr>
+    </table>
+
+## ◎ Table  <a name="Table"></a>
+
+
+## ◎ Tooltip  <a name="Tooltip"></a>
+  - table style : `<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">`
+  - Tooltip 방향 : tooltip-XXX
+    <table>
+      <tr>
+        <td>top</td>
+        <td>bottom</td>
+        <td>left</td>
+        <td>right</td>
+      </tr>
+    </table>
+  - Tooltip 색상 : tooltip-XXX
+    <table>
+      <tr>
+        <td>neutral</td>
+        <td>primary</td>
+        <td>secondary</td>
+        <td>accent</td>
+        <td>info</td>
+        <td>success</td>
+        <td>warning</td>
+        <td>error</td>
+      </tr>
+    </table>
+  ``` html  
+    <div class="tooltip" data-tip="hello">
+      <button class="btn">Hover me</button>
+    </div>
+  ```
+  ``` html  
+    <div class="tooltip">
+      <div class="tooltip-content">
+        <div class="animate-bounce text-orange-400 -rotate-10 text-2xl font-black">Wow!</div>
+      </div>
+      <button class="btn">Hover me</button>
+    </div>
+  ```
+
+
+
+## ◎ DropDown  <a name="DropDown"></a>
+  - 드롭다운 위치지정 : dropdown dropdown-XXX
+    + 버튼 시작 / 가운데 / 끝 위치: `start`, `center`, `end`
+    + 버튼 위 /  왼쪽 / 오른쪽: `top`, `left`, `right`
+    + event : `dropdown-hover`, `dropdown-open`
+  ``` html
+  <div class="dropdown dropdown-center">
+    <div tabindex="0" role="button" class="btn m-1">Click</div>
+    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+      <li><a>Item 1</a></li>
+      <li><a>Item 2</a></li>
+    </ul>
+  </div>
+  ```
+
+
 
 ## ◎ Modal <a name="modal"></a>
   - [API modal](https://daisyui.com/components/modal/)
@@ -168,3 +305,8 @@
     }
   </script>
   ```
+
+
+## ◎ Themes  <a name="themes"></a>
+  - [AIP Themes](https://daisyui.com/docs/themes/)
+  - [CDN Themes](https://reacthustle.com/blog/how-to-modify-daisyui-theme-using-cdn)
