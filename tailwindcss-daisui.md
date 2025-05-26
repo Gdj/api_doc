@@ -14,7 +14,7 @@
   - [◎ Modal](#modal)
   - [◎ Themes](#themes)
 
-## Setting
+## ◎ Setting
 - CDN :
 ```html
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css"/>
@@ -62,7 +62,7 @@
     ```
 
 
-## ◎ Color  
+## ◎ Color  <a name="color"></a>
   - bg-{COLOR_NAME}
   - btn-XXX, bg-XXX, text-XXX, accent-XXX, placeholder-XXX, decoration-XXX
 
@@ -101,7 +101,7 @@
     </tbody>
   </table>
 
-## ◎ Badge 
+## ◎ Badge <a name="badge"></a>
   - base Class : `badge`
   - badge Color : badge-XXX
     <table>
@@ -137,7 +137,7 @@
     </table>
 
   
-## ◎ Button  
+## ◎ Button  <a name="button"></a>
   - base Class : `btn`
   - button Color : btn-XXX
     <table>
@@ -177,11 +177,32 @@
       </tr>
     </table>
 
-## ◎ Table  
-
-
-## ◎ Tooltip  
+## ◎ Table  <a name="table"></a>
   - table style : `<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">`
+  - table zebra : `<table class="table table-zebra">`
+  - table-pin-rows (핀고정) : `<table class="table table-pin-rows">`
+  - table-pin-cols (핀고정) : `<table class="table table-pin-cols">`
+  - tr active : `<tr class="bg-base-200">`
+  - tr hover : `<tr class="hover:bg-base-300">`
+  - Table 크기 : table-XXX
+    <table>
+      <tr>
+        <td>xs</td>
+        <td>sm</td>
+        <td>md (default)</td>
+        <td>lg</td>
+        <td>xl</td>
+      </tr>
+    </table>
+  - table
+  ``` html
+    <div class="overflow-x-auto">
+      <table class="table">
+      </table>
+    </div>
+  ```
+
+## ◎ Tooltip  <a name="tooltip"></a>
   - Tooltip 방향 : tooltip-XXX
     <table>
       <tr>
@@ -220,7 +241,7 @@
 
 
 
-## ◎ DropDown  
+## ◎ DropDown  <a name="DropDown"></a>
   - 드롭다운 위치지정 : dropdown dropdown-XXX
     + 버튼 시작 / 가운데 / 끝 위치: `start`, `center`, `end`
     + 버튼 위 /  왼쪽 / 오른쪽: `top`, `left`, `right`
@@ -237,10 +258,11 @@
 
 
 
-## ◎ Modal 
+## ◎ Modal <a name="modal"></a>
   - [API modal](https://daisyui.com/components/modal/)
 
 ### default modal (script)
+
   ```html
   <!-- The button to open modal -->
   <label for="my-modal-4" class="btn">open modal</label>
