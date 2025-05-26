@@ -241,7 +241,7 @@
 
 
 
-## ◎ DropDown  <a name="DropDown"></a>
+## ◎ DropDown  <a name="dropdown"></a>
   - 드롭다운 위치지정 : dropdown dropdown-XXX
     + 버튼 시작 / 가운데 / 끝 위치: `start`, `center`, `end`
     + 버튼 위 /  왼쪽 / 오른쪽: `top`, `left`, `right`
