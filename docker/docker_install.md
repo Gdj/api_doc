@@ -46,7 +46,7 @@
 		RUN yarn install --immutable
 		CMD ["node", "index"]
 	```
-	- 토커파일 이미지 생성
+	- 토커파일 이미지 생성   
 		`-f` 어떤 도커파일 명시   
 		`-t` 도커이미지 이름   
 		`docker build -f Dockerfile -t fun-docker .`

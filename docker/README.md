@@ -79,7 +79,7 @@ or
 
 **이미지 만드는 사람:**
 ```bash
-# 1. 이미지 빌드 (프로젝트 전체가 이미지에 포함됨)
+# 1. 이미지 빌드 (. 현제 프로젝트의 `package.json yarn.lock ./` 내용을 이미지로 만듬)
 docker build -t my-vite-app .
 
 # 2. tar 파일로 저장
