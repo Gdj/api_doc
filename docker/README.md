@@ -80,9 +80,14 @@ or
 **이미지 만드는 사람:**
 ```bash
 # 1. 이미지 빌드 (. 현제 프로젝트의 `package.json yarn.lock ./` 내용을 이미지로 만듬)
+# 	`-f` 어떤 도커파일 명시 (생약가능)
+#		`-t` 도커이미지 이름   
+docker build -f Dockerfile -t my-vite-app .
 docker build -t my-vite-app .
 
-# 2. tar 파일로 저장
+# 2. tar 파일로 저장 (my-vite-app 도커이미지를 my-vite-app.tar로 저장)
+# :latest (생약가능)내부적으로 :latest 로인식함
+docker save -o my-vite-app.tar my-vite-app:latest 
 docker save -o my-vite-app.tar my-vite-app
 
 # 3. 파일 공유 (Google Drive, USB 등)
@@ -94,20 +99,23 @@ docker save -o my-vite-app.tar my-vite-app
 docker load -i my-vite-app.tar
 
 # 2. 실행 (둘중 하나 실행) -it 옵션 권장 (소스코드가 컨테니어 안에 있을때)  
-- `-d` : 웹 서비스처럼 컨테이너를 백그라운드에서 실행하고, 
+- `-d` : (stands for detached) 웹 서비스처럼 컨테이너를 백그라운드에서 실행하고, 
   즉시 터미널 제어권을 돌려받고 싶을 때 사용합니다.
-- `-it` : 대화형 세션이나 개발/디버깅을 위해 컨테이너를 포그라운드에서 실행하고,
+- `-it` : (interactive tty)대화형 세션이나 개발/디버깅을 위해 컨테이너를 포그라운드에서 실행하고,
   컨테이너의 출력(로그)을 즉시 보고 싶을 때 사용합니다.
+- `-p` (is port publishing) 로컬 호스트 포트(8080)와 컨테이너 포트(8080)연결   
 docker run -d -p 8080:8088 my-vite-app
 docker run -it -p 8080:8088 my-vite-app
 
 # 3.  소스 코드 수정이 필요할 경우 → 호스트 폴더를 마운트 (둘중 하나 실행)
-docker run -d -p 8080:8088 -v ./src:/app/src -v ./public:/app/public my-vite-app
-docker run -it -p 8080:8088 -v ./src:/app/src -v ./public:/app/public my-vite-app
+# - `./src` 로컬홀더, : `/app/src`도커 의 홀더를 의미함
+# - 도커 이미지에는 없지만 로컬에 있는 홀더를 도커 컨테이너에 주입하여 실행하는 명령
+docker run -d  -p 8080:8088 -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public my-vite-app
+docker run -it -p 8080:8088 -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public my-vite-app
 
 # 4. 빌드 실행 (둘중 하나 실행)
 - 컨테이너에서 빌드된 결과물이 로컬 ./dist 폴더에 그대로 저장됩니다.
-docker run -d -v ./dist:/app/dist my-vite-app yarn build
+docker run -d  -v ./dist:/app/dist my-vite-app yarn build
 docker run -it -v ./dist:/app/dist my-vite-app yarn build
 ```
 

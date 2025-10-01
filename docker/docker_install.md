@@ -47,28 +47,26 @@
 		CMD ["node", "index"]
 	```
 	- 토커파일 이미지 생성   
-		`-f` 어떤 도커파일 명시   
 		`-t` 도커이미지 이름   
-		`docker build -f Dockerfile -t fun-docker .`
+		`docker build -t my-vite-app .`
 	- 토커 이미지 확인   
 	 	`docker images`
-	- 토커 이미지 실행    
-	  `-d` (stands for detached) 백그라운드에서 실행하고 끝날때까지 기다리지 말고 다음일 처리   
-		`-p` (is port publishing) 로컬 호스트 포트(8080)와 컨테이너 포트(8080)연결   
-		`docker run -d -p 8080:8080 fun-docker`
-	- 실행준인 도커 컨테인 리스트   
-	  `docker ps`
-	- 실행중인 컨테이터 확인   
-	  `docker logs 도커아이디`
+	- 공유을 위한 도커 이미지 백업   
+	`docker save -o my-vite-app.tar my-vite-app`
 
-## 도커 백업 이미지 사용법
-- 공유을 위한 도커 이미지 백업   
-	`docker save fun-docker:latest -o fun-docker.tar`
+## 도커 백업 이미지 사용
 - 백업 도커 파일 로드하여 시스템 이미지 저장소로 보내기    
-	`docker load -i fun-docker.tar`
-
-
-
+	`docker load -i my-vite-app.tar`
+- 도커 컨테이너 개발 실행
+	`-it` (stands for detached) 백그라운드에서 실행하고 끝날때까지 기다리지 말고 다음일 처리   
+	`-p` (is port publishing) 로컬 호스트 포트(8080)와 컨테이너 포트(8080)연결   
+	`docker run -it -p 8080:8088 -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public my-vite-app`
+- 도커 컨테이너로 빌드
+	`docker run -it -v ./dist:/app/dist my-vite-app yarn build`
+- 실행준인 도커 컨테인 리스트   
+	`docker ps`
+- 실행중인 컨테이터 확인   
+	`docker logs 도커아이디`
   
 ## nodejs with docker
 - https://nodejs.org/ko/download
