@@ -4,17 +4,16 @@
 ## 사전 작업
 - 도커 세팅 : https://www.youtube.com/watch?v=LXJhA3VWXFA
 - 사전 세팅 : https://www.youtube.com/watch?v=rATNU0Fr8zs&t=676s
-
+- 도커데스크탑설치, 터미널, ubuntu 설치
   1. docker 설치 : [docker download](https://docs.docker.com/desktop/setup/install/windows-install/)
   2. window : Ubuntu 설치 
-  3. window : window terminal 설리  => Ubuntu를 윈도우 터미널에서 텝으로 추가할수 있다.
+  3. window : window terminal 설치  => Ubuntu를 윈도우 터미널에서 텝으로 추가할수 있다.
 	4. docker.desktop : Settings => Resources => WSL integration => Ubuntu 활성화 후 리스타트
 	  우분트에서 도커명령어를 사용할 수 있다.
 	5. Ubuntu : `docker version`
   
 ## 프로 젝트 생성
-- yarn install express
-- yarn add express
+- `npm install express` or `yarn add express`
 	``` js
 		// index.js
 		const express = require('express')
@@ -34,7 +33,7 @@
 
 ## 도커 파일 생성
   - Dockerfile
-	+ FROM : node 22버젼의 - alpine (최소단위의 리눅스버젼)
+	+ FROM : node 22버젼의 `-alpine`최소단위의 리눅스버젼, `AS builder`빌드 스테이지 이름 지정 
 	+ WORKDIR : 실행될위치 	
 	+ COPY : 현디렉토리에서 실행될 디렉토리로 복사될 파일 
 	+ RUN : 설치 `npm ci` or `yarn install --immutable`
@@ -45,7 +44,7 @@
 		WORKDIR /app
 		COPY package.json yarn.lock ./
 		RUN yarn install --immutable
-		CMD ["yarn", "dev"]
+		CMD ["node", "index"]
 	```
 	- 토커파일 이미지 생성
 		`-f` 어떤 도커파일 명시   
