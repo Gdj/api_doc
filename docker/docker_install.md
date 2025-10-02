@@ -48,11 +48,16 @@
 	```
 	- 토커파일 이미지 생성   
 		`-t` 도커이미지 이름   
-		`docker build -t my-vite-app .`
+		``` bash
+		docker build -t my-vite-app .
+		```
+	- 공유을 위한 도커 이미지 백업   
+		`-o` output
+		``` bash
+		docker save -o my-vite-app.tar my-vite-app
+		```
 	- 토커 이미지 확인   
 	 	`docker images`
-	- 공유을 위한 도커 이미지 백업   
-	`docker save -o my-vite-app.tar my-vite-app`
 
 ## 도커 백업 이미지 사용
 - 백업 도커 파일 로드하여 시스템 이미지 저장소로 보내기    
@@ -62,12 +67,28 @@
 	`-p` (is port publishing) 로컬 호스트 포트(8080)와 컨테이너 포트(8080)연결   
 	`docker run -it -p 8080:8088 -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public my-vite-app`
 - 도커 컨테이너로 빌드
-	`docker run -it -v ./dist:/app/dist my-vite-app yarn build`
-- 실행준인 도커 컨테인 리스트   
+	`docker run -it -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public -v ./dist:/app/dist tr_vitesetting-node22_vite5 yarn build`
+- 실행중인 도커 컨테이너 리스트   
 	`docker ps`
+- 종료된 도커 컨테이너 리스트
+	`docker ps -a`
 - 실행중인 컨테이터 확인   
 	`docker logs 도커아이디`
   
+## 도커 삭제하기 
+- 사용중지 
+	``` bash
+	docker stop tr_vitesetting-node22_vite5
+	```
+- 도커 컨테이너, 이미지 삭제 `rm` 컨테이너 삭제 , `rmi` 이미지삭제
+	`-f` 삭제 강제 옵션 (이미지 이름 앞에 넣어도 컨테이너는 삭제되지 않음) 
+	컨테이너 삭제, 이미지 삭제
+	``` bash
+	docker rm  [컨테이너아이디]
+	docker rmi  tr_vitesetting-node22_vite5
+	```
+
+
 ## nodejs with docker
 - https://nodejs.org/ko/download
 - 도커 설치 확인 : `docker --version`

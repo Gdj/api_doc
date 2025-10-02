@@ -1,6 +1,5 @@
 #  nodejs 를 Docker 이미지 로 공유 가이드 (Vite 프로젝트)
 
-
 ## 1. package.json 의존성 이미지 공유
 
 프로젝트 폴더에 **단 2개 파일**만 추가:
@@ -32,6 +31,9 @@ FROM node:22-alpine AS builder
 
 # 작업 디렉토리 설정
 WORKDIR /app
+
+# 컨테이너에 xdg-open 사용을위한  xdg-utils 패키지설치
+# RUN apk update && apk add xdg-utils
 
 # 의존성이 변경되지 않으면 이 레이어는 캐시되어 빌드 속도가 빨라집니다
 # npm 설치시 : package.json과 package-lock.json을 먼저 복사 => `COPY package*.json ./`
@@ -101,8 +103,8 @@ docker load -i my-vite-app.tar
 # 2. 실행 (둘중 하나 실행) -it 옵션 권장 (소스코드가 컨테니어 안에 있을때)  
 - `-d` : (stands for detached) 웹 서비스처럼 컨테이너를 백그라운드에서 실행하고, 
   즉시 터미널 제어권을 돌려받고 싶을 때 사용합니다.
-- `-it` : (interactive tty)대화형 세션이나 개발/디버깅을 위해 컨테이너를 포그라운드에서 실행하고,
-  컨테이너의 출력(로그)을 즉시 보고 싶을 때 사용합니다.
+- `-it` : (interactive tty)컨테이너 안에서 터미널을 직접 다룰 수 있게 됨. 
+  개발/디버깅을 위해 컨테이너를 포그라운드에서 실행하고, 컨테이너의 출력(로그)을 즉시 보고 싶을 때 사용합니다.
 - `-p` (is port publishing) 로컬 호스트 포트(8080)와 컨테이너 포트(8080)연결   
 docker run -d -p 8080:8088 my-vite-app
 docker run -it -p 8080:8088 my-vite-app
@@ -139,12 +141,13 @@ docker run -it -v ./dist:/app/dist my-vite-app yarn build
   ## 준비물
   - Docker Desktop 설치 필요
   - 다운로드: https://www.docker.com/products/docker-desktop
+  - 도커 버젼확인 : `docker version`
 
   ## 실행 방법
   - 도커파일 로드 : 
     `docker load -i my-vite-app.tar`
   - 도커파일 데브모드 : (로컬주소 : 컨테이너 주소)
-    `docker run -it -p 8080:8088 -v ./src:/app/src -v ./public:/app/public my-vite-app`
+    `docker run -it -p 5173:5173 -v ./src:/app/src -v ./public:/app/public -v ./guide:/app/guide -v ./html:/app/html  my-vite-app`
   - 도커파일 빌드 :  
     `docker run -it -v ./dist:/app/dist my-vite-app yarn build`
 
@@ -168,9 +171,18 @@ docker start vite-app
 ```
 
 ### 완전 삭제
+- 도커중지후 삭제 도커이름 or id   
+- 이미지 기반으로 컨테이너가 돌아감
+- `rm` 컨테이너 만삭제 삭제
+- `rmi` 이미지 과 컨테이너 삭제
+- `-f` 강제삭제
 ```bash
 docker stop vite-app
 docker rm vite-app
+```
+``` bash
+docker stop vite-app
+docker rmi vite-app
 ```
 
 ### 로그 확인
@@ -178,13 +190,19 @@ docker rm vite-app
 docker logs vite-app
 ```
 
-### 컨테이너 확인
+### 이미지 & 컨테이너 확인
 ```bash
+# 이미지 확인
+docker images
+
 # 실행중인 컨테이너 확인
 docker ps
 
 # 종료된 컨테이너 확인
 docker ps -a
+
+# 중지된 도커 컨테이너 모두삭제  
+docker container prune
 ```
 
 
