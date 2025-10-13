@@ -22,11 +22,11 @@
 	```
 - 도커파일 데브모드 : (로컬주소 : 컨테이너 주소)   
 	``` bash
-		docker run -it -p 5173:5173 -v ./vite.config.js:/app/vite.config.js -v project.config.json:/app/project.config.json -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public tr_vitesetting-node22_vite5
+		docker run -it -p 5173:5173 -v ./vite.config.js:/app/vite.config.js -v ./project.config.json:/app/project.config.json -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public tr_vitesetting-node22_vite5
 	```
 - 도커파일 빌드 : 선택적빌드, 전체빌드
 	``` bash
-		docker run -it -v ./vite.config.js:/app/vite.config.js -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public -v ./dist:/app/dist tr_vitesetting-node22_vite5 yarn build
+		docker run -it -v ./vite.config.js:/app/vite.config.js -v ./project.config.json:/app/project.config.json -v ./src:/app/src -v ./html:/app/html -v ./guide:/app/guide -v ./public:/app/public -v ./dist:/app/dist tr_vitesetting-node22_vite5 yarn build
 	```
 	``` bash
 	# 현재 모든 파일
