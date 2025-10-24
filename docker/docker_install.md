@@ -4,6 +4,7 @@
 ## 사전 작업
 - 도커 세팅 : https://www.youtube.com/watch?v=LXJhA3VWXFA
 - 사전 세팅 : https://www.youtube.com/watch?v=rATNU0Fr8zs&t=676s
+- 프론트, 백엔드, 데이터베이스 : https://www.youtube.com/watch?v=hWPv9LMlme8
 - 도커데스크탑설치, 터미널, ubuntu 설치
   1. docker 설치 : [docker download](https://docs.docker.com/desktop/setup/install/windows-install/)
   2. window : Ubuntu 설치 
@@ -47,11 +48,11 @@
 		CMD ["node", "index"]
 	```
 	- 토커파일 이미지 생성   
-		`-t` 도커이미지 이름   
+		`-t` 도커이미지 이름 `.`현재 홀더 
 		``` bash
 		docker build -t my-vite-app .
 		```
-	- 공유을 위한 도커 이미지 백업   
+	- 공유을 위한 도커 이미지 `my-vite-app.tar`이름으로 압축 
 		`-o` output
 		``` bash
 		docker save -o my-vite-app.tar my-vite-app
