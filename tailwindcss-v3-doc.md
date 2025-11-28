@@ -593,8 +593,8 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
       <tr>
         <th>margin</th>
         <td>.m-X</td>
-        <td>.mx-X</td>
         <td>.my-X</td>
+        <td>.mx-X</td>
         <td>.ms-X</td>
         <td>.me-X</td>
         <td>.mt-X</td>
