@@ -578,12 +578,15 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
     <thead>
       <tr> 
         <th> 종류 </th>
-        <th> 위 </th>
-        <th> 아래 </th>
-        <th> 왼쪽 </th>
-        <th> 오른쪽 </th>
+        <th> 상하좌우 </th>
         <th> 상하 </th>
         <th> 좌우 </th>
+        <th> 시작 <small>(방향성)</small> </th>
+        <th> 끝  <small>(방향성)</small> </th>
+        <th> 상 </th>
+        <th> 하 </th>
+        <th> 좌 </th>
+        <th> 우 </th>
       </tr>
     </thead>
     <tbody>
@@ -595,9 +598,9 @@ Tailwind CLI 로설치해서 사용할 때는 css 확장해서 사용할 수 있
         <td>.ms-X</td>
         <td>.me-X</td>
         <td>.mt-X</td>
+        <td>.mb-X</td>
         <td>.ml-X</td>
         <td>.mr-X</td>
-        <td>.mb-X</td>
       </tr>
       <tr>
         <th>padding</th>
